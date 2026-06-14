@@ -1,787 +1,962 @@
 <!DOCTYPE html>
-<html lang="el" class="scroll-smooth">
+<html lang="el">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Δήμητρα Μπότσογλου | Ψυχολόγος - Ψυχοθεραπεύτρια Θεσσαλονίκη</title>
-    <meta name="description" content="Συνθετική Ψυχοθεραπεία & Κλινική Έρευνα από την αδειούχο Ψυχολόγο Δήμητρα Μπότσογλου στη Θεσσαλονίκη. Γεφυρώνοντας το παρελθόν με το παρόν σας.">
-    <meta name="keywords" content="Ψυχολόγος Θεσσαλονίκη, Δήμητρα Μπότσογλου, Συνθετική Ψυχοθεραπεία, Κρίσεις Πανικού, Θεραπεία Ζεύγους, Εφηβική Ψυχολογία">
-    <meta name="author" content="Advon Media">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
- 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
- 
-    <!-- Tailwind Config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        lux: {
-                            50: '#f8f9fa',
-                            100: '#f1f3f5',
-                            200: '#e9ecef',
-                            300: '#dee2e6',
-                            400: '#ced4da',
-                            500: '#adb5bd',
-                            600: '#6c757d',
-                            700: '#495057',   // Slate gray
-                            800: '#343a40',   // Deep slate
-                            900: '#212529',   // Charcoal
-                            taupe: '#8a817c', // Calm muted taupe for accents
-                            navy: '#2b3a4a',  // Deep professional blue-grey
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                        serif: ['"Cormorant Garamond"', 'serif'],
-                    },
-                    boxShadow: {
-                        'glass': '0 8px 32px 0 rgba(43, 58, 74, 0.08)',
-                        'soft': '0 20px 40px -15px rgba(0,0,0,0.05)',
-                        'glow': '0 0 50px -10px rgba(138, 129, 124, 0.15)',
-                        'service': '0 30px 60px -15px rgba(0,0,0,0.05)',
-                    },
-                    animation: {
-                        'float': 'float 8s ease-in-out infinite',
-                        'float-delayed': 'float 8s ease-in-out 4s infinite',
-                        'marquee-vertical': 'marquee-vertical 50s linear infinite',
-                        'fade-in-up': 'fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-20px)' },
-                        },
-                        'marquee-vertical': {
-                            '0%': { transform: 'translateY(0%)' },
-                            '100%': { transform: 'translateY(-50%)' },
-                        },
-                        fadeInUp: {
-                            '0%': { opacity: 0, transform: 'translateY(40px)' },
-                            '100%': { opacity: 1, transform: 'translateY(0)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
- 
-    <style>
-        /* Smooth Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f8f9fa; }
-        ::-webkit-scrollbar-thumb { background: #8a817c; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #495057; }
- 
-        /* Core Utilities */
-        body { background-color: #f8f9fa; overflow-x: hidden; }
-        .text-balance { text-wrap: balance; }
-        
-        /* Reveal Animations */
-        .reveal { opacity: 0; transform: translateY(40px); transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
-        .reveal.active { opacity: 1; transform: translateY(0); }
-        .delay-100 { transition-delay: 100ms; }
-        .delay-200 { transition-delay: 200ms; }
-        .delay-300 { transition-delay: 300ms; }
- 
-        /* Glassmorphism */
-        .glass {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.8);
-        }
-        
-        /* Image Masking & Hover */
-        .img-reveal-wrapper { overflow: hidden; }
-        .img-reveal-wrapper img { transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1); }
-        .img-reveal-wrapper:hover img { transform: scale(1.03); }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Νίκος Μούρτζινος DDS — Χειρουργός Οδοντίατρος | Μενίδι, Αχαρνές</title>
+<meta name="description" content="Νίκος Μούρτζινος, Χειρουργός Οδοντίατρος στο Μενίδι. Εξειδίκευση στη Χειρουργική Στόματος, Εμφυτεύματα & Αισθητική Οδοντιατρική. Οδυσσέως 17, Αχαρνές.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Familjen+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bone:#f4efe9;
+  --bone-2:#ece4da;
+  --ink:#211d1a;
+  --ink-soft:#4a443e;
+  --coral:#d9472f;
+  --coral-deep:#b8341f;
+  --blush:#ecd9d4;
+  --line:#cdc3b6;
+  --white:#fffdfa;
+  --display:"Fraunces", Georgia, serif;
+  --sans:"Familjen Grotesk", system-ui, sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --ease-soft:cubic-bezier(.4,0,.2,1);
+  --pad:clamp(1.4rem,5vw,7rem);
+  --gut:clamp(3.5rem,9vw,9rem);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sans);
+  background:var(--bone);
+  color:var(--ink);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  line-height:1.55;
+}
+::selection{background:var(--coral);color:var(--white)}
+::-webkit-scrollbar{width:11px}
+::-webkit-scrollbar-track{background:var(--bone-2)}
+::-webkit-scrollbar-thumb{background:var(--coral);border:3px solid var(--bone-2);border-radius:99px}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+h1,h2,h3,h4{font-family:var(--display);font-weight:400;line-height:1.02;letter-spacing:-.02em}
+.wrap{max-width:1320px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
 
-        /* Lightbox */
-        #lightbox {
-            opacity: 0; pointer-events: none; transition: opacity 0.5s ease;
-            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-        }
-        #lightbox.active { opacity: 1; pointer-events: auto; }
-        #lightbox img { transform: scale(0.95); transition: transform 0.5s ease; max-height: 90vh; max-width: 90vw; object-fit: contain; }
-        #lightbox.active img { transform: scale(1); }
+/* ============ LOADER ============ */
+#loader{position:fixed;inset:0;z-index:9999;background:var(--ink);display:grid;place-items:center;transition:opacity .7s var(--ease),visibility .7s}
+#loader.done{opacity:0;visibility:hidden}
+.load-inner{text-align:center;overflow:hidden}
+.load-mark{width:54px;height:54px;margin:0 auto 1.4rem;opacity:0;transform:scale(.7);animation:loadMark .8s var(--ease) .1s forwards}
+.load-mark svg{width:100%;height:100%}
+.load-name{font-family:var(--display);color:var(--bone);font-size:clamp(1.5rem,4vw,2.4rem);letter-spacing:-.02em;overflow:hidden}
+.load-name span{display:inline-block;transform:translateY(110%);animation:loadName .9s var(--ease) forwards}
+.load-line{height:1px;background:var(--coral);margin:1.1rem auto 0;width:0;animation:loadLine 1s var(--ease) .55s forwards}
+@keyframes loadMark{to{opacity:1;transform:scale(1)}}
+@keyframes loadName{to{transform:translateY(0)}}
+@keyframes loadLine{to{width:190px}}
 
-        /* Vertical Marquee Mask */
-        .marquee-mask {
-            mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
-            -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
-        }
+/* ============ NAV ============ */
+header{position:fixed;top:0;left:0;width:100%;z-index:1000;transition:background .5s var(--ease),box-shadow .5s var(--ease),border-color .5s}
+header .bar{display:flex;align-items:center;justify-content:space-between;padding:1.3rem var(--pad);transition:padding .4s var(--ease)}
+header.scrolled{background:rgba(244,239,233,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header.scrolled .bar{padding-top:.85rem;padding-bottom:.85rem}
+.brand{display:flex;align-items:center;gap:.7rem;z-index:1002}
+.brand svg{width:30px;height:30px;flex:none;transition:transform .5s var(--ease)}
+.brand:hover svg{transform:rotate(-12deg)}
+.brand .bt{line-height:1}
+.brand .bn{font-family:var(--display);font-size:1.18rem;letter-spacing:-.01em;color:var(--ink)}
+.brand .bp{font-size:.6rem;text-transform:uppercase;letter-spacing:.28em;color:var(--coral-deep);font-weight:600}
+header:not(.scrolled) .brand .bn{color:var(--white)}
+header:not(.scrolled) .brand .bp{color:var(--blush)}
+header:not(.scrolled) .brand svg .tooth-f{fill:var(--white)}
+.nav-links{display:flex;align-items:center;gap:2.3rem}
+.nav-links a.lk{font-size:.82rem;font-weight:500;letter-spacing:.02em;position:relative;color:var(--ink);transition:color .3s}
+header:not(.scrolled) .nav-links a.lk{color:var(--bone)}
+.nav-links a.lk::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:1.5px;background:var(--coral);transition:width .35s var(--ease)}
+.nav-links a.lk:hover::after{width:100%}
+.nav-cta{font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.02em;background:var(--coral);color:var(--white);padding:.72rem 1.4rem;border-radius:99px;transition:background .3s,transform .3s var(--ease)}
+.nav-cta:hover{background:var(--coral-deep);transform:translateY(-2px)}
+.burger{display:none;flex-direction:column;gap:5px;z-index:1002;padding:6px}
+.burger span{width:26px;height:2px;background:var(--white);transition:.4s var(--ease);transform-origin:center}
+header.scrolled .burger span{background:var(--ink)}
+body.menu-open .burger span{background:var(--white)}
+body.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+body.menu-open .burger span:nth-child(2){opacity:0}
+body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
-        /* Unique Service Card Hover Effects */
-        .service-card-unique {
-            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .service-card-unique:hover {
-            transform: translateX(10px) translateY(-5px);
-            border-color: #8a817c;
-        }
-    </style>
- 
-    <script src="https://unpkg.com/lucide@latest"></script>
+/* mobile overlay */
+.overlay{position:fixed;inset:0;z-index:1001;background:var(--ink);display:flex;flex-direction:column;justify-content:center;padding:var(--pad);clip-path:circle(0% at 100% 0%);transition:clip-path .7s var(--ease);pointer-events:none}
+body.menu-open .overlay{clip-path:circle(150% at 100% 0%);pointer-events:auto}
+.overlay a{font-family:var(--display);font-size:clamp(2rem,9vw,3.2rem);color:var(--bone);padding:.32rem 0;opacity:0;transform:translateY(20px);transition:opacity .4s,transform .4s,color .3s}
+.overlay a:hover{color:var(--coral)}
+body.menu-open .overlay a{opacity:1;transform:translateY(0)}
+body.menu-open .overlay a:nth-child(1){transition-delay:.18s}
+body.menu-open .overlay a:nth-child(2){transition-delay:.25s}
+body.menu-open .overlay a:nth-child(3){transition-delay:.32s}
+body.menu-open .overlay a:nth-child(4){transition-delay:.39s}
+body.menu-open .overlay a:nth-child(5){transition-delay:.46s}
+body.menu-open .overlay a:nth-child(6){transition-delay:.53s}
+.overlay .ov-foot{margin-top:2.6rem;color:var(--blush);font-family:var(--sans);font-size:.85rem;opacity:0;transition:opacity .5s .6s}
+body.menu-open .overlay .ov-foot{opacity:1}
+.overlay .ov-foot a{font-family:var(--sans);font-size:.95rem;color:var(--coral);display:inline}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;background:var(--ink);overflow:hidden;padding-bottom:clamp(2.5rem,6vh,5rem)}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.12);animation:heroZoom 2.4s var(--ease) .3s forwards}
+@keyframes heroZoom{to{opacity:.42;transform:scale(1)}}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,29,26,.55) 0%,rgba(33,29,26,.2) 35%,rgba(33,29,26,.85) 100%)}
+.hero-grain{position:absolute;inset:0;z-index:1;opacity:.06;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-inner{position:relative;z-index:2;width:100%}
+.hero-tag{display:flex;align-items:center;gap:.8rem;color:var(--blush);font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;font-weight:600;margin-bottom:1.5rem;overflow:hidden}
+.hero-tag>*{display:inline-block;transform:translateY(110%);opacity:0;animation:rise .9s var(--ease) 1.1s forwards}
+.hero-tag .dot{width:7px;height:7px;border-radius:50%;background:var(--coral);transform:none;animation:none;flex:none}
+.hero h1{color:var(--bone);font-size:clamp(2.7rem,8.5vw,7.2rem);letter-spacing:-.035em;line-height:.92;max-width:14ch}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln span{display:inline-block;transform:translateY(108%);animation:rise 1s var(--ease) forwards}
+.hero h1 .ln:nth-child(1) span{animation-delay:1.2s}
+.hero h1 .ln:nth-child(2) span{animation-delay:1.32s}
+.hero h1 .ln:nth-child(3) span{animation-delay:1.44s}
+.hero h1 em{font-style:italic;color:var(--coral);font-weight:300}
+@keyframes rise{to{transform:translateY(0);opacity:1}}
+.hero-sub{margin-top:2rem;max-width:46ch;color:var(--bone-2);font-size:clamp(1rem,1.4vw,1.16rem);line-height:1.6;opacity:0;animation:fade 1s var(--ease) 1.7s forwards}
+.hero-actions{margin-top:2.4rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;opacity:0;animation:fade 1s var(--ease) 1.95s forwards}
+@keyframes fade{to{opacity:1}}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:600;font-size:.9rem;letter-spacing:.01em;padding:1rem 1.7rem;border-radius:99px;transition:transform .35s var(--ease),background .3s,color .3s}
+.btn-primary{background:var(--coral);color:var(--white)}
+.btn-primary:hover{background:var(--white);color:var(--ink);transform:translateY(-3px)}
+.btn-ghost{color:var(--bone);border:1px solid rgba(244,239,233,.35)}
+.btn-ghost:hover{border-color:var(--bone);transform:translateY(-3px)}
+.btn svg{width:16px;height:16px}
+.hero-meta{position:absolute;right:var(--pad);bottom:clamp(2.5rem,6vh,5rem);z-index:2;text-align:right;color:var(--bone-2);opacity:0;animation:fade 1s var(--ease) 2.2s forwards}
+.hero-meta .num{font-family:var(--display);font-size:clamp(2.4rem,5vw,3.6rem);color:var(--coral);line-height:1}
+.hero-meta .lbl{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;margin-top:.3rem}
+.scroll-cue{position:absolute;left:50%;bottom:1.4rem;transform:translateX(-50%);z-index:2;color:var(--blush);font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:.5rem;opacity:0;animation:fade 1s 2.4s forwards}
+.scroll-cue .ln2{width:1px;height:34px;background:linear-gradient(var(--coral),transparent);animation:cue 1.8s var(--ease) infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}40%{transform:scaleY(1);transform-origin:top}60%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ============ MARQUEE ============ */
+.marquee{background:var(--coral);color:var(--white);padding:1.05rem 0;overflow:hidden;white-space:nowrap;border-top:1px solid var(--coral-deep)}
+.marquee-track{display:inline-flex;align-items:center;animation:scroll 32s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee span{font-family:var(--display);font-size:clamp(1.1rem,2vw,1.5rem);font-style:italic;padding:0 1.6rem;display:inline-flex;align-items:center;gap:1.6rem}
+.marquee span::after{content:"";width:7px;height:7px;background:var(--white);border-radius:50%;opacity:.7}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ============ SECTIONS COMMON ============ */
+section{position:relative}
+.section{padding:var(--gut) 0}
+.eyebrow{display:inline-flex;align-items:center;gap:.7rem;font-size:.72rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--coral-deep);margin-bottom:1.4rem}
+.eyebrow .ix{font-family:var(--display);font-style:italic;font-size:.95rem;color:var(--ink)}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--coral)}
+.sec-title{font-size:clamp(2rem,5vw,3.6rem);letter-spacing:-.03em;max-width:18ch}
+.sec-title em{font-style:italic;color:var(--coral)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}.reveal.d4{transition-delay:.4s}
+
+/* ============ ABOUT ============ */
+.about{background:var(--bone)}
+.about-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(2.5rem,6vw,6rem);align-items:center}
+.about-figure{position:relative}
+.about-figure .frame{position:relative;border-radius:8px;overflow:hidden;background:var(--blush);aspect-ratio:1/1}
+.about-figure img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform 1.1s var(--ease)}
+.about-figure:hover img{transform:scale(1.04)}
+.about-figure .tagchip{position:absolute;bottom:-22px;left:-22px;background:var(--ink);color:var(--bone);padding:1.1rem 1.5rem;border-radius:6px;max-width:230px}
+.about-figure .tagchip .nm{font-family:var(--display);font-size:1.15rem}
+.about-figure .tagchip .rl{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);margin-top:.25rem}
+.about-figure .am{position:absolute;top:1rem;right:1rem;background:rgba(255,253,250,.92);backdrop-filter:blur(4px);padding:.45rem .85rem;border-radius:99px;font-size:.7rem;font-weight:600;letter-spacing:.08em;color:var(--ink-soft)}
+.about-body h2{font-size:clamp(1.8rem,4vw,3rem);margin-bottom:1.6rem;letter-spacing:-.03em}
+.about-body p{color:var(--ink-soft);margin-bottom:1.1rem;max-width:54ch}
+.pullquote{margin:2rem 0;padding-left:1.4rem;border-left:2px solid var(--coral);font-family:var(--display);font-style:italic;font-size:clamp(1.2rem,2.4vw,1.65rem);line-height:1.3;color:var(--ink)}
+.about-stats{display:flex;gap:2.6rem;margin-top:2.2rem;flex-wrap:wrap}
+.about-stats .st .n{font-family:var(--display);font-size:2.2rem;color:var(--coral);line-height:1}
+.about-stats .st .l{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:.35rem}
+
+/* ============ SERVICES ============ */
+.services{background:var(--ink);color:var(--bone)}
+.services .eyebrow{color:var(--coral)}
+.services .eyebrow .ix{color:var(--bone)}
+.services .sec-title{color:var(--bone)}
+.services .head{max-width:760px;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.services .head p{color:var(--bone-2);margin-top:1.2rem;max-width:52ch;font-size:1.05rem}
+.svc-list{border-top:1px solid rgba(244,239,233,.16)}
+.svc{border-bottom:1px solid rgba(244,239,233,.16);transition:background .4s var(--ease)}
+.svc-head{display:grid;grid-template-columns:auto 1fr auto;gap:1.5rem;align-items:center;padding:1.8rem 1rem;cursor:pointer}
+.svc:hover{background:rgba(244,239,233,.04)}
+.svc-num{font-family:var(--display);font-style:italic;font-size:1rem;color:var(--coral)}
+.svc-title{font-family:var(--display);font-size:clamp(1.4rem,3vw,2.3rem);letter-spacing:-.02em;transition:color .3s,transform .4s var(--ease)}
+.svc:hover .svc-title{color:var(--coral);transform:translateX(8px)}
+.svc-toggle{width:38px;height:38px;border:1px solid rgba(244,239,233,.3);border-radius:50%;display:grid;place-items:center;flex:none;transition:.4s var(--ease)}
+.svc-toggle::before,.svc-toggle::after{content:"";position:absolute;background:var(--bone);transition:.4s var(--ease)}
+.svc-toggle::before{width:13px;height:1.5px}
+.svc-toggle::after{width:1.5px;height:13px}
+.svc.open .svc-toggle{background:var(--coral);border-color:var(--coral);transform:rotate(135deg)}
+.svc-body{max-height:0;overflow:hidden;transition:max-height .55s var(--ease)}
+.svc-body-in{padding:0 1rem 2rem 1rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem 3rem}
+.svc-body p{color:var(--bone-2);max-width:50ch;line-height:1.65}
+.svc-body .tags{display:flex;flex-wrap:wrap;gap:.5rem;align-content:start}
+.svc-body .tags .t{font-size:.74rem;letter-spacing:.04em;color:var(--bone);border:1px solid rgba(244,239,233,.28);padding:.45rem .9rem;border-radius:99px}
+
+/* ============ PROCESS ============ */
+.process{background:var(--blush)}
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:clamp(2.5rem,5vw,4rem);counter-reset:p}
+.proc-step{padding:2rem 1.6rem 2.4rem;border-left:1px solid var(--line);position:relative;transition:background .4s}
+.proc-step:first-child{border-left:none}
+.proc-step:hover{background:rgba(255,253,250,.5)}
+.proc-step .pn{font-family:var(--display);font-size:3.2rem;color:var(--coral);line-height:1;opacity:.9}
+.proc-step h4{font-size:1.3rem;margin:1rem 0 .7rem;letter-spacing:-.01em}
+.proc-step p{font-size:.92rem;color:var(--ink-soft);line-height:1.6}
+.proc-step .pdot{position:absolute;top:2.4rem;left:-5px;width:9px;height:9px;background:var(--coral);border-radius:50%}
+.proc-step:first-child .pdot{display:none}
+
+/* ============ PHILOSOPHY ============ */
+.philo{background:var(--bone)}
+.philo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:clamp(2.5rem,5vw,4rem)}
+.philo-card{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:2.2rem 1.9rem;position:relative;overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.philo-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:var(--coral);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.philo-card:hover{transform:translateY(-7px);box-shadow:0 22px 50px -28px rgba(33,29,26,.4)}
+.philo-card:hover::before{transform:scaleX(1)}
+.philo-card .ic{width:46px;height:46px;color:var(--coral);margin-bottom:1.3rem}
+.philo-card h4{font-size:1.45rem;margin-bottom:.8rem;letter-spacing:-.01em}
+.philo-card p{font-size:.95rem;color:var(--ink-soft);line-height:1.65}
+
+/* ============ GALLERY ============ */
+.gallery{background:var(--ink);color:var(--bone)}
+.gallery .eyebrow{color:var(--coral)}
+.gallery .sec-title{color:var(--bone)}
+.gal-grid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:140px;gap:14px;margin-top:clamp(2.5rem,5vw,3.5rem)}
+.gal-item{position:relative;overflow:hidden;border-radius:6px;cursor:pointer;background:#000}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease),opacity .6s}
+.gal-item::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(217,71,47,.45),transparent 60%);opacity:0;transition:opacity .5s}
+.gal-item:hover img{transform:scale(1.07)}
+.gal-item:hover::after{opacity:1}
+.gal-item .zoom{position:absolute;bottom:12px;right:12px;width:34px;height:34px;border-radius:50%;background:rgba(255,253,250,.92);display:grid;place-items:center;opacity:0;transform:scale(.6);transition:.4s var(--ease)}
+.gal-item:hover .zoom{opacity:1;transform:scale(1)}
+.gal-item .zoom svg{width:15px;height:15px;color:var(--ink)}
+.g-a{grid-column:span 4;grid-row:span 2}
+.g-b{grid-column:span 2;grid-row:span 2}
+.g-c{grid-column:span 2;grid-row:span 2}
+.g-d{grid-column:span 2;grid-row:span 2}
+.g-e{grid-column:span 2;grid-row:span 2}
+
+/* lightbox */
+.lightbox{position:fixed;inset:0;z-index:2000;background:rgba(20,17,15,.94);display:grid;place-items:center;padding:5vw;opacity:0;visibility:hidden;transition:opacity .4s}
+.lightbox.show{opacity:1;visibility:visible}
+.lightbox img{max-width:92vw;max-height:86vh;border-radius:6px;transform:scale(.94);transition:transform .4s var(--ease)}
+.lightbox.show img{transform:scale(1)}
+.lb-close{position:absolute;top:1.5rem;right:1.7rem;width:46px;height:46px;border:1px solid rgba(244,239,233,.4);border-radius:50%;color:var(--bone);display:grid;place-items:center;transition:.3s}
+.lb-close:hover{background:var(--coral);border-color:var(--coral)}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:50px;height:50px;border:1px solid rgba(244,239,233,.35);border-radius:50%;color:var(--bone);display:grid;place-items:center;transition:.3s}
+.lb-nav:hover{background:var(--coral);border-color:var(--coral)}
+.lb-prev{left:1.5rem}.lb-next{right:1.5rem}
+
+/* ============ REVIEWS ============ */
+.reviews{background:var(--bone-2)}
+.rev-top{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:clamp(2rem,4vw,3rem)}
+.rev-score{display:flex;align-items:center;gap:1.1rem}
+.rev-score .big{font-family:var(--display);font-size:clamp(3rem,7vw,4.6rem);color:var(--coral);line-height:.9}
+.rev-score .meta .stars{color:var(--coral);letter-spacing:2px;font-size:1.05rem}
+.rev-score .meta .cnt{font-size:.82rem;color:var(--ink-soft);margin-top:.2rem}
+.rev-track-wrap{overflow:hidden;position:relative}
+.rev-track{display:flex;gap:1.4rem;transition:transform .7s var(--ease);will-change:transform}
+.rev-card{flex:0 0 clamp(280px,33%,400px);background:var(--white);border:1px solid var(--line);border-radius:10px;padding:1.9rem 1.8rem;display:flex;flex-direction:column}
+.rev-card .qr{color:var(--coral);font-family:var(--display);font-size:2.6rem;line-height:.6;height:1.4rem}
+.rev-card .rtxt{color:var(--ink-soft);font-size:.98rem;line-height:1.6;margin:.6rem 0 1.3rem;flex:1;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden;transition:none}
+.rev-card.exp .rtxt{-webkit-line-clamp:unset}
+.rev-card .more{align-self:flex-start;font-size:.78rem;font-weight:600;color:var(--coral);margin-bottom:1rem;display:none}
+.rev-card.clip .more{display:inline-block}
+.rev-card .rfoot{display:flex;align-items:center;gap:.8rem;border-top:1px solid var(--line);padding-top:1rem}
+.rev-card .av{width:40px;height:40px;border-radius:50%;background:var(--coral);color:var(--white);display:grid;place-items:center;font-family:var(--display);font-size:1.1rem;flex:none}
+.rev-card .rn{font-weight:600;font-size:.92rem}
+.rev-card .rd{font-size:.74rem;color:var(--ink-soft)}
+.rev-card .v10{margin-left:auto;font-family:var(--display);color:var(--coral);font-size:1.1rem}
+.rev-ctrl{display:flex;align-items:center;gap:.8rem;margin-top:1.8rem}
+.rev-btn{width:48px;height:48px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;transition:.35s var(--ease)}
+.rev-btn:hover{background:var(--ink);color:var(--bone)}
+.rev-btn:disabled{opacity:.3;cursor:default}
+.rev-btn:disabled:hover{background:none;color:inherit}
+.rev-prog{flex:1;height:2px;background:var(--line);position:relative;border-radius:2px;overflow:hidden}
+.rev-prog i{position:absolute;left:0;top:0;height:100%;background:var(--coral);width:25%;transition:width .6s var(--ease),left .6s var(--ease)}
+.rev-src{font-size:.78rem;color:var(--ink-soft)}
+.rev-src a{color:var(--coral);font-weight:600}
+
+/* ============ FAQ ============ */
+.faq{background:var(--bone)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4.5rem);align-items:start;margin-top:1rem}
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:1.5rem 0;cursor:pointer;font-family:var(--display);font-size:clamp(1.1rem,2vw,1.4rem);letter-spacing:-.01em;transition:color .3s}
+.faq-item:hover .faq-q{color:var(--coral)}
+.faq-ic{width:30px;height:30px;flex:none;position:relative}
+.faq-ic::before,.faq-ic::after{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--coral);transition:.4s var(--ease)}
+.faq-ic::before{width:14px;height:1.6px}
+.faq-ic::after{width:1.6px;height:14px}
+.faq-item.open .faq-ic::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.faq-a p{padding:0 0 1.5rem;color:var(--ink-soft);max-width:60ch;line-height:1.65}
+
+/* ============ CONTACT ============ */
+.contact{background:var(--ink);color:var(--bone)}
+.contact .eyebrow{color:var(--coral)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,5rem);align-items:start}
+.contact h2{color:var(--bone);font-size:clamp(2.2rem,5vw,3.8rem);letter-spacing:-.03em;margin-bottom:1.4rem}
+.contact h2 em{font-style:italic;color:var(--coral)}
+.contact-lead{color:var(--bone-2);max-width:44ch;margin-bottom:2.4rem;font-size:1.05rem}
+.cinfo{display:flex;flex-direction:column;gap:1.4rem}
+.cinfo a,.cinfo .ci{display:flex;align-items:center;gap:1.1rem;color:var(--bone);transition:color .3s}
+.cinfo a:hover{color:var(--coral)}
+.cinfo .cic{width:46px;height:46px;border:1px solid rgba(244,239,233,.25);border-radius:50%;display:grid;place-items:center;flex:none;transition:.4s var(--ease)}
+.cinfo a:hover .cic{background:var(--coral);border-color:var(--coral)}
+.cinfo .cic svg{width:19px;height:19px}
+.cinfo .clbl{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--coral)}
+.cinfo .cval{font-size:1.08rem}
+.contact-cta-row{margin-top:2.4rem;display:flex;flex-wrap:wrap;gap:1rem}
+.map-frame{border-radius:10px;overflow:hidden;border:1px solid rgba(244,239,233,.18);aspect-ratio:1/1;min-height:340px}
+.map-frame iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+
+/* ============ FOOTER ============ */
+footer{background:#171413;color:var(--bone-2);padding:clamp(3rem,6vw,4.5rem) 0 2.2rem}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;flex-wrap:wrap;padding-bottom:2.5rem;border-bottom:1px solid rgba(244,239,233,.1)}
+.foot-brand{display:flex;align-items:center;gap:.8rem}
+.foot-brand svg{width:34px;height:34px}
+.foot-brand svg .tooth-f{fill:var(--bone)}
+.foot-brand .bn{font-family:var(--display);font-size:1.35rem;color:var(--bone)}
+.foot-brand .bp{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--coral);margin-top:.2rem}
+.foot-nav{display:flex;gap:1.6rem;flex-wrap:wrap}
+.foot-nav a{font-size:.85rem;transition:color .3s}
+.foot-nav a:hover{color:var(--coral)}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding-top:1.8rem;font-size:.78rem}
+.foot-bottom .credit a{color:var(--bone);font-weight:600;border-bottom:1px solid var(--coral);transition:color .3s}
+.foot-bottom .credit a:hover{color:var(--coral)}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:960px){
+  .nav-links{display:none}
+  .burger{display:flex}
+  .about-grid{grid-template-columns:1fr;gap:3.5rem}
+  .about-figure{max-width:480px}
+  .svc-body-in{grid-template-columns:1fr;gap:1.4rem}
+  .proc-grid{grid-template-columns:1fr 1fr}
+  .proc-step{border-left:1px solid var(--line)}
+  .proc-step:nth-child(odd){border-left:none}
+  .philo-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+  .g-a,.g-b,.g-c,.g-d,.g-e{grid-column:span 1;grid-row:span 1}
+  .g-a{grid-column:span 2;grid-row:span 2}
+  .faq-grid{grid-template-columns:1fr;gap:2rem}
+  .contact-grid{grid-template-columns:1fr}
+  .rev-card{flex:0 0 86%}
+}
+@media(max-width:540px){
+  .proc-grid{grid-template-columns:1fr}
+  .proc-step{border-left:none!important;border-top:1px solid var(--line)}
+  .proc-step:first-child{border-top:none}
+  .about-figure .tagchip{left:0}
+  .hero-meta{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+  .hero-bg img{opacity:.42;transform:none}
+}
+</style>
 </head>
-<body class="text-lux-800 font-sans antialiased selection:bg-lux-taupe selection:text-white">
- 
-    <!-- Navbar -->
-    <nav class="fixed w-full z-50 transition-all duration-500" id="navbar">
-        <div class="max-w-7xl mx-auto px-6 py-4">
-            <div class="glass rounded-full flex justify-between items-center px-6 md:px-8 py-3 md:py-4 shadow-glass">
-                <a href="#" class="group flex items-center gap-4" aria-label="Αρχική">
-                    <img src="https://github.com/agelmet/MPOTSOGLOU/blob/main/mpotslog.jpg?raw=true" alt="Δήμητρα Μπότσογλου Logo" class="h-14 w-14 md:h-16 md:w-16 rounded-full object-cover shadow-md border-2 border-white/70 group-hover:scale-105 transition-transform duration-300">
-                    
-                    <div class="flex flex-col">
-                        <span class="text-lg md:text-2xl font-serif tracking-widest text-lux-900 group-hover:text-lux-taupe transition-colors duration-300 leading-none mb-1">
-                            ΔΗΜΗΤΡΑ ΜΠΟΤΣΟΓΛΟΥ
-                        </span>
-                        <span class="text-[0.6rem] md:text-xs font-sans tracking-[0.2em] text-lux-600 uppercase">
-                            Ψυχολογος - Ψυχοθεραπευτρια
-                        </span>
-                    </div>
-                </a>
-                
-                <div class="hidden lg:flex items-center space-x-10">
-                    <a href="#about" class="text-xs font-semibold uppercase tracking-widest text-lux-700 hover:text-lux-taupe transition-colors">Προσέγγιση</a>
-                    <a href="#services" class="text-xs font-semibold uppercase tracking-widest text-lux-700 hover:text-lux-taupe transition-colors">Υπηρεσίες</a>
-                    <a href="#space" class="text-xs font-semibold uppercase tracking-widest text-lux-700 hover:text-lux-taupe transition-colors">Χώρος</a>
-                    <a href="#reviews" class="text-xs font-semibold uppercase tracking-widest text-lux-700 hover:text-lux-taupe transition-colors">Αξιολογήσεις</a>
-                    <a href="#contact" class="px-8 py-3.5 bg-lux-900 text-white rounded-full text-xs font-bold uppercase tracking-widest hover:bg-lux-taupe hover:shadow-glow transition-all duration-300 transform hover:-translate-y-0.5">
-                        Επικοινωνία
-                    </a>
-                </div>
- 
-                <button class="lg:hidden text-lux-900 focus:outline-none" id="mobile-menu-btn" aria-label="Menu">
-                    <i data-lucide="menu" class="w-7 h-7"></i>
-                </button>
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white/95 backdrop-blur-2xl shadow-2xl hidden flex-col items-center py-10 space-y-8 border-t border-lux-100">
-            <img src="https://github.com/agelmet/MPOTSOGLOU/blob/main/mpotslog.jpg?raw=true" alt="Δήμητρα Μπότσογλου Logo" class="h-20 w-20 rounded-full object-cover shadow-md border-2 border-lux-200 mb-2">
-            
-            <a href="#about" class="text-lg font-serif tracking-widest text-lux-900 mobile-link">ΠΡΟΣΕΓΓΙΣΗ</a>
-            <a href="#services" class="text-lg font-serif tracking-widest text-lux-900 mobile-link">ΥΠΗΡΕΣΙΕΣ</a>
-            <a href="#space" class="text-lg font-serif tracking-widest text-lux-900 mobile-link">ΧΩΡΟΣ</a>
-            <a href="#reviews" class="text-lg font-serif tracking-widest text-lux-900 mobile-link">ΑΞΙΟΛΟΓΗΣΕΙΣ</a>
-            <a href="#contact" class="px-10 py-4 bg-lux-900 text-white rounded-full text-sm font-bold uppercase tracking-widest mobile-link">ΕΠΙΚΟΙΝΩΝΙΑ</a>
-        </div>
-    </nav>
- 
-    <!-- Hero Section -->
-    <section class="relative min-h-[100svh] flex items-center pt-32 pb-20 px-6 overflow-hidden bg-cover bg-center bg-fixed" style="background-image: url('https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-5.jpg');">
-        
-        <div class="absolute inset-0 bg-gradient-to-r from-lux-50/95 via-lux-50/70 to-transparent"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-lux-50 via-transparent to-transparent"></div>
- 
-        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
-            
-            <!-- Left Content -->
-            <div class="lg:col-span-7 reveal flex flex-col justify-center order-2 lg:order-1 text-center lg:text-left mt-8 lg:mt-0">
-                <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-lux-200 bg-white/70 backdrop-blur-md text-lux-taupe text-xs font-bold uppercase tracking-widest mb-8 mx-auto lg:mx-0 w-max shadow-sm">
-                    <span class="w-1.5 h-1.5 rounded-full bg-lux-taupe animate-pulse"></span>
-                    Κλινικη Ερευνα & Θεραπεια
-                </div>
-                
-                <h1 class="text-5xl lg:text-7xl xl:text-[5rem] font-serif text-lux-900 leading-[1.1] mb-8 text-balance drop-shadow-sm">
-                    Συνθετική Ψυχοθεραπεία: <br>
-                    <span class="text-lux-taupe italic">Γεφυρώνοντας το Παρελθόν</span> <br>
-                    με το Παρόν σας
-                </h1>
-                
-                <p class="text-lg lg:text-xl text-lux-800 mb-12 max-w-2xl leading-relaxed font-light mx-auto lg:mx-0 drop-shadow-sm">
-                    Η Δήμητρα Μπότσογλου (BSc, MSc) είναι αδειούχος Ψυχολόγος - Ψυχοθεραπεύτρια (Αρ. Αδείας: 343712 / 10995). Με διπλή εξειδίκευση στη Συμβουλευτική Ψυχολογία και την Εφηβική Ιατρική, παρέχει έναν ασφαλή χώρο ίασης και εξέλιξης.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
-                    <a href="#contact" class="w-full sm:w-auto px-10 py-4.5 bg-lux-900 text-white rounded-full text-sm font-bold uppercase tracking-widest hover:bg-lux-taupe transition-all shadow-xl hover:shadow-glow flex items-center justify-center gap-3 group">
-                        Κλειστε Ραντεβου
-                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-                    </a>
-                    <a href="#about" class="w-full sm:w-auto px-10 py-4.5 bg-white/60 backdrop-blur-sm border border-lux-300 text-lux-900 rounded-full text-sm font-bold uppercase tracking-widest hover:border-lux-taupe hover:bg-white/90 transition-all flex items-center justify-center shadow-sm">
-                        Η Προσέγγιση
-                    </a>
-                </div>
-            </div>
- 
-            <!-- Right Content (Portrait) -->
-            <div class="lg:col-span-5 relative reveal delay-200 flex justify-center lg:justify-end order-1 lg:order-2">
-                <div class="relative w-full max-w-[420px] aspect-[4/5] lg:aspect-[3/4] animate-float">
-                    <div class="absolute inset-0 border border-lux-taupe/60 rounded-[2rem] transform rotate-3 translate-x-3 translate-y-3 backdrop-blur-sm bg-white/10"></div>
-                    
-                    <div class="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl img-reveal-wrapper bg-lux-200 border border-white/50">
-                        <img src="https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-7.jpg" alt="Δήμητρα Μπότσογλου Portrait" class="w-full h-full object-cover object-center filter contrast-[1.05] brightness-95">
-                    </div>
-                    
-                    <div class="absolute -bottom-6 -left-6 z-30 glass p-5 rounded-2xl shadow-2xl flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full bg-lux-taupe flex items-center justify-center text-white shadow-lg">
-                            <i data-lucide="heart-pulse" class="w-5 h-5"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm font-bold text-lux-900 tracking-wide">1500+ Ώρες</p>
-                            <p class="text-xs text-lux-600 font-medium">Κλινικής Πρακτικής</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <!-- Philosophy / About Section -->
-    <section id="about" class="py-32 px-6 bg-lux-50 relative">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
-            
-            <div class="order-2 lg:order-1 relative reveal flex justify-center lg:justify-start">
-                <div class="absolute inset-0 bg-lux-200 rounded-full blur-[100px] opacity-60 translate-x-10 translate-y-10 z-0"></div>
-                
-                <div class="relative z-10 w-full max-w-lg">
-                    <div class="absolute -inset-4 border border-lux-300 rounded-t-full rounded-b-[3rem] transform -rotate-2"></div>
-                    <div class="rounded-t-full rounded-b-[3rem] overflow-hidden shadow-service img-reveal-wrapper aspect-[3/4] bg-white p-2">
-                        <img src="https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-9.jpg" alt="Λεπτομέρεια Προσέγγισης" class="w-full h-full object-cover rounded-t-full rounded-b-[2.5rem]">
-                    </div>
-                </div>
-            </div>
- 
-            <div class="order-1 lg:order-2 reveal delay-200 relative z-10">
-                <span class="inline-block px-4 py-1.5 rounded-full border border-lux-200 bg-white text-xs font-bold uppercase tracking-widest text-lux-taupe mb-6 shadow-sm">
-                    Επιστημονικο Προφιλ
-                </span>
-                <h3 class="text-4xl md:text-5xl font-serif text-lux-900 mb-8 leading-tight text-balance">
-                    Το Αόρατο "Σενάριο": Πώς οι Πρώτες μας Σχέσεις Υπαγορεύουν το Παρόν μας
-                </h3>
-                
-                <div class="space-y-6 text-lux-700 font-light leading-relaxed text-lg">
-                    <p>
-                        Το επιστημονικό της προφίλ διακρίνεται από μια σπάνια και εξαιρετικά στοχευμένη διπλή εξειδίκευση: κατέχει Μεταπτυχιακό Δίπλωμα (MSc) στη Συμβουλευτική Ψυχολογία (Πανεπιστήμιο Θεσσαλίας), καθώς και δεύτερο Μεταπτυχιακό Τίτλο στην Εφηβική Ιατρική και Ψυχοκοινωνική Φροντίδα Εφήβων, από το Τμήμα Ιατρικής του Α.Π.Θ.
-                    </p>
-                    <p>
-                        Αν παρατηρήσετε το ακαδημαϊκό της βιογραφικό, θα διαπιστώσετε πως ένα μεγάλο μέρος της έρευνάς της επικεντρώνεται σε ένα πολύ συγκεκριμένο θέμα: Στον αντίκτυπο που έχει η σχέση γονέα - παιδιού στη μετέπειτα αυτοεκτίμηση και στις διαπροσωπικές σχέσεις του εφήβου και του ενήλικα.
-                    </p>
-                    
-                    <blockquote class="border-l-2 border-lux-taupe pl-8 py-4 my-8 text-2xl font-serif text-lux-900 italic bg-white/50 rounded-r-2xl">
-                        "Όλοι μας ερχόμαστε στην ενήλικη ζωή κρατώντας ένα αόρατο 'σενάριο' για το πώς πρέπει να αγαπάμε, πώς να διεκδικούμε και πώς να προστατεύουμε τον εαυτό μας."
-                    </blockquote>
-                    
-                    <p>
-                        Η θεραπευτική της προσέγγιση είναι πολυδιάστατη. Έχει εκπαιδευτεί στη Γνωσιακή Συμπεριφορική Θεραπεία (CBT) και έχει ολοκληρώσει αυστηρή, τετραετή της ειδίκευση στη Συνθετική Ψυχοθεραπεία. Αυτό της επιτρέπει να μην εγκλωβίζεται σε μία μόνο θεωρία, αλλά να προσαρμόζει τα εργαλεία της ακριβώς στις δικές σας ανάγκες. Παράλληλα έχει παρακολουθήσει μετεκπαιδευτικό Σεμινάριο Παρατήρησης Βρέφους από τη Βορειοελλαδική Ψυχαναλυτική Εταιρία και Εισαγωγικούς Κύκλους Εκπαίδευσης στην Ψυχαναλυτική Πρακτική από την Ελληνική Ψυχαναλυτική Εταιρία (ΕΨΕ).
-                    </p>
-                    <p>
-                        Η έρευνα από μόνη της, όμως, δεν αρκεί. Μετρώντας πάνω από 1500 ώρες κλινικής πρακτικής άσκησης και εθελοντικής εργασίας σε βαριές δομές, έχει αποκτήσει τη βαθιά ψυχραιμία και ενσυναίσθηση που απαιτείται. <strong>Στο γραφείο της δεν θα βρείτε μια αποστειρωμένη ακαδημαϊκό. Θα βρείτε μια θεραπεύτρια απολύτως "γειωμένη", που δεν θα σοκαριστεί και δεν θα σας κρίνει.</strong>
-                    </p>
-                    <p>
-                        Το παρόν διάστημα εργάζεται στο Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης στη Μονάδα Ισότητας Φύλων και Καταπολέμησης των Διακρίσεων, συμβάλλοντας στην προώθηση της ισότητας, της συμπερίληψης και της προστασίας των ανθρωπίνων δικαιωμάτων στον ακαδημαϊκό χώρο.
-                    </p>
-                    <p>
-                        <strong>Ερευνητικό Έργο:</strong> Πρόσφατη έρευνα με τίτλο “ΤΟ ΒΙΩΜΑ ΤΟΥ ΠΑΤΕΡΑ ΣΤΟΝ ΣΥΓΧΡΟΝΟ ΚΟΙΝΩΝΙΚΟ ΔΕΣΜΟ: ΜΙΑ ΠΟΙΟΤΙΚΗ ΜΕΘΟΔΟΛΟΓΙΑ ΕΡΕΥΝΑΣ”.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <!-- Unique Services Section -->
-    <section id="services" class="py-32 px-6 bg-white border-t border-lux-200">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16">
-            
-            <div class="lg:col-span-4 relative">
-                <div class="lg:sticky lg:top-32 reveal">
-                    <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-lux-taupe mb-4">
-                        <span class="w-8 h-px bg-lux-taupe"></span>
-                        Υπηρεσιες
-                    </span>
-                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif text-lux-900 mb-8 text-balance">
-                        Πώς Μπορούμε να Βοηθήσουμε
-                    </h2>
-                    <p class="text-lux-600 font-light leading-relaxed text-lg mb-8">
-                        Μια πολυδιάστατη θεραπευτική προσέγγιση που δεν εγκλωβίζεται σε μία μόνο θεωρία, αλλά προσαρμόζει τα επιστημονικά εργαλεία ακριβώς στις δικές σας, μοναδικές ανάγκες.
-                    </p>
-                    <a href="#contact" class="inline-flex items-center gap-3 text-lux-900 font-bold uppercase tracking-widest text-sm hover:text-lux-taupe transition-colors group">
-                        Κλειστε Ραντεβου
-                        <div class="w-8 h-8 rounded-full border border-lux-300 flex items-center justify-center group-hover:border-lux-taupe transition-colors">
-                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
- 
-            <div class="lg:col-span-8 space-y-8">
-                
-                <!-- Service 1 -->
-                <div class="service-card-unique bg-lux-50 p-8 md:p-12 rounded-[2rem] shadow-sm border border-lux-200 reveal relative overflow-hidden group">
-                    <div class="absolute -right-10 -top-10 text-[12rem] font-serif font-bold text-white opacity-50 select-none group-hover:scale-110 transition-transform duration-700 pointer-events-none">01</div>
-                    <div class="relative z-10 flex flex-col md:flex-row gap-8 items-start">
-                        <div class="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center shrink-0 text-lux-taupe group-hover:-translate-y-2 transition-transform duration-500">
-                            <i data-lucide="brain" class="w-8 h-8"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl md:text-3xl font-serif font-bold text-lux-900 mb-4 group-hover:text-lux-taupe transition-colors">Άγχος, Κρίσεις Πανικού & Κατάθλιψη</h3>
-                            <p class="text-lux-600 mb-8 font-light leading-relaxed text-lg">
-                                Η καθημερινή πίεση συχνά σωρεύεται, οδηγώντας σε ανεξέλεγκτο άγχος, κρίσεις πανικού ή καταθλιπτική στασιμότητα. Αξιοποιώντας εργαλεία της Γνωσιακής Συμπεριφορικής Θεραπείας (CBT) και της Συνθετικής προσέγγισης, δουλεύουμε στο "εδώ και τώρα". Αναγνωρίζουμε τις σκέψεις που πυροδοτούν τον φόβο σας, μαθαίνουμε τεχνικές χαλάρωσης και χτίζουμε σταδιακά την ψυχική σας ανθεκτικότητα.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-4 py-1.5 bg-white text-lux-700 text-xs font-bold tracking-wider uppercase rounded-full shadow-sm">Συνεδρία 50'</span>
-                                <span class="px-4 py-1.5 bg-white text-lux-700 text-xs font-bold tracking-wider uppercase rounded-full shadow-sm">CBT & Συνθετική</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
- 
-                <!-- Service 2 -->
-                <div class="service-card-unique bg-lux-50 p-8 md:p-12 rounded-[2rem] shadow-sm border border-lux-200 reveal delay-100 relative overflow-hidden group">
-                    <div class="absolute -right-10 -top-10 text-[12rem] font-serif font-bold text-white opacity-50 select-none group-hover:scale-110 transition-transform duration-700 pointer-events-none">02</div>
-                    <div class="relative z-10 flex flex-col md:flex-row gap-8 items-start">
-                        <div class="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center shrink-0 text-lux-taupe group-hover:-translate-y-2 transition-transform duration-500">
-                            <i data-lucide="sprout" class="w-8 h-8"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl md:text-3xl font-serif font-bold text-lux-900 mb-4 group-hover:text-lux-taupe transition-colors">Ψυχοθεραπεία Παιδιών & Εφήβων</h3>
-                            <p class="text-lux-600 mb-8 font-light leading-relaxed text-lg">
-                                Τα παιδιά και οι έφηβοι που αντιμετωπίζουν μέτριες ή σοβαρές ψυχοσυναισθηματικές ή αναπτυξιακές δυσκολίες συχνά ανταποκρίνονται σε πρόσωπα και καταστάσεις με τρόπους που δυσκολεύονται να κατανοήσουν ή να διαχειριστούν. Τα συναισθήματά τους μπορεί να είναι ιδιαίτερα έντονα και κατακλυσμιαία, γεγονός που καθιστά δύσκολη τη ρύθμιση και τον έλεγχό τους. Η συναισθηματική αυτή δυσφορία εκδηλώνεται συχνά μέσα από τη συμπεριφορά, επηρεάζοντας σταδιακά τη συναισθηματική, γνωστική και κοινωνική τους ανάπτυξη. Η συμβουλευτική και ψυχοθεραπευτική μου προσέγγιση επιχειρεί να διερευνήσει τις βαθύτερες διεργασίες που βρίσκονται πίσω από τις δυσκολίες στη συμπεριφορά, τα συναισθήματα και τις διαπροσωπικές σχέσεις, βοηθώντας τα παιδιά, τους εφήβους και τις οικογένειές τους να αποκτήσουν ουσιαστικότερη κατανόηση του εαυτού τους και των προκλήσεων που αντιμετωπίζουν. Η θεραπεία του παιδιού επικεντρώνεται στον εσωτερικό συναισθηματικό του κόσμο, ενώ παράλληλα παρέχεται στήριξη και καθοδήγηση στους γονείς και το οικογενειακό περιβάλλον.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-4 py-1.5 bg-white text-lux-700 text-xs font-bold tracking-wider uppercase rounded-full shadow-sm">Εφηβεία 50'</span>
-                                <span class="px-4 py-1.5 bg-white text-lux-700 text-xs font-bold tracking-wider uppercase rounded-full shadow-sm">Επαγγ. Προσανατολισμός</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
- 
-                <!-- Service 3 -->
-                <div class="service-card-unique bg-lux-50 p-8 md:p-12 rounded-[2rem] shadow-sm border border-lux-200 reveal relative overflow-hidden group">
-                    <div class="absolute -right-10 -top-10 text-[12rem] font-serif font-bold text-white opacity-50 select-none group-hover:scale-110 transition-transform duration-700 pointer-events-none">03</div>
-                    <div class="relative z-10 flex flex-col md:flex-row gap-8 items-start">
-                        <div class="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center shrink-0 text-lux-taupe group-hover:-translate-y-2 transition-transform duration-500">
-                            <i data-lucide="users" class="w-8 h-8"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl md:text-3xl font-serif font-bold text-lux-900 mb-4 group-hover:text-lux-taupe transition-colors">Διαπροσωπικές Σχέσεις & Θεραπεία Ζεύγους</h3>
-                            <p class="text-lux-600 mb-8 font-light leading-relaxed text-lg">
-                                Βασισμένη στην πλούσια ερευνητική της δραστηριότητα γύρω από τους οικογενειακούς δεσμούς, η θεραπεύτρια υποστηρίζει ενήλικες και ζευγάρια να σπάσουν τα τοξικά μοτίβα επικοινωνίας. Παράλληλα, παρέχεται εξειδικευμένη Συμβουλευτική Γονέων, βοηθώντας τους να κατανοήσουν τις συμπεριφορές των παιδιών τους και να χτίσουν όρια στο σπίτι.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-4 py-1.5 bg-white text-lux-700 text-xs font-bold tracking-wider uppercase rounded-full shadow-sm">Ζεύγος 60'</span>
-                                <span class="px-4 py-1.5 bg-white text-lux-700 text-xs font-bold tracking-wider uppercase rounded-full shadow-sm">Συμβουλευτική Γονέων</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
- 
-                <!-- Service 4 -->
-                <div class="service-card-unique bg-lux-50 p-8 md:p-12 rounded-[2rem] shadow-sm border border-lux-200 reveal delay-100 relative overflow-hidden group">
-                    <div class="absolute -right-10 -top-10 text-[12rem] font-serif font-bold text-white opacity-50 select-none group-hover:scale-110 transition-transform duration-700 pointer-events-none">04</div>
-                    <div class="relative z-10 flex flex-col md:flex-row gap-8 items-start">
-                        <div class="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center shrink-0 text-lux-taupe group-hover:-translate-y-2 transition-transform duration-500">
-                            <i data-lucide="heart-handshake" class="w-8 h-8"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl md:text-3xl font-serif font-bold text-lux-900 mb-4 group-hover:text-lux-taupe transition-colors">Κοινωνική Μέριμνα & Προσβασιμότητα</h3>
-                            <p class="text-lux-600 mb-8 font-light leading-relaxed text-lg">
-                                Αναγνωρίζοντας βαθιά τη δύσκολη οικονομική συγκυρία και προερχόμενη από τον χώρο της κοινωνικής προσφοράς (εθελοντισμός σε ΜΚΟ), διαμορφώνεται ειδική, μειωμένη τιμολογιακή πολιτική για ανέργους και φοιτητές. Η ψυχική υγεία και η αυτοφροντίδα δεν πρέπει να αποτελούν προνόμιο λίγων, αλλά δικαίωμα για όλους.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-4 py-1.5 bg-white text-lux-700 text-xs font-bold tracking-wider uppercase rounded-full shadow-sm">Ειδικό Κόστος</span>
-                                <span class="px-4 py-1.5 bg-white text-lux-700 text-xs font-bold tracking-wider uppercase rounded-full shadow-sm">Άνεργοι/Φοιτητές</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
- 
-            </div>
-        </div>
-    </section>
- 
-    <!-- Space / Images Section -->
-    <section id="space" class="py-32 px-6 bg-lux-50 border-t border-lux-200">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
-                <div class="max-w-2xl">
-                    <span class="text-xs font-bold uppercase tracking-widest text-lux-taupe mb-4 block">Περιβαλλον</span>
-                    <h2 class="text-4xl md:text-5xl font-serif text-lux-900 mb-6">Ο Χώρος Θεραπείας</h2>
-                    <p class="text-lux-600 font-light text-lg">Ένα περιβάλλον σχεδιασμένο με μινιμαλιστική αισθητική για να αποπνέει ηρεμία, ζεστασιά και απόλυτη ιδιωτικότητα. Κάντε κλικ στις εικόνες για μεγέθυνση.</p>
-                </div>
-            </div>
- 
-            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-                <!-- Uncropped, auto-height images in masonry layout -->
-                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal bg-white shadow-sm border border-lux-100" onclick="openLightbox('https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-5.jpg')" aria-label="Προβολή εικόνας">
-                    <img src="https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-5.jpg" alt="Χώρος Θεραπείας" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 object-contain">
-                    <div class="absolute inset-0 bg-lux-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
-                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
-                    </div>
-                </button>
-                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal delay-100 bg-white shadow-sm border border-lux-100" onclick="openLightbox('https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09.jpg')" aria-label="Προβολή εικόνας">
-                    <img src="https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09.jpg" alt="Χώρος Θεραπείας" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 object-contain">
-                    <div class="absolute inset-0 bg-lux-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
-                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
-                    </div>
-                </button>
-                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal delay-200 bg-white shadow-sm border border-lux-100" onclick="openLightbox('https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-8.jpg')" aria-label="Προβολή εικόνας">
-                    <img src="https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-8.jpg" alt="Χώρος Θεραπείας" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 object-contain">
-                    <div class="absolute inset-0 bg-lux-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
-                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
-                    </div>
-                </button>
-                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal bg-white shadow-sm border border-lux-100" onclick="openLightbox('https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-4.jpg')" aria-label="Προβολή εικόνας">
-                    <img src="https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-4.jpg" alt="Χώρος Θεραπείας" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 object-contain">
-                    <div class="absolute inset-0 bg-lux-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
-                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
-                    </div>
-                </button>
-                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal delay-100 bg-white shadow-sm border border-lux-100" onclick="openLightbox('https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-3.jpg')" aria-label="Προβολή εικόνας">
-                    <img src="https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-3.jpg" alt="Χώρος Θεραπείας" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 object-contain">
-                    <div class="absolute inset-0 bg-lux-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
-                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
-                    </div>
-                </button>
-                <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal delay-200 bg-white shadow-sm border border-lux-100" onclick="openLightbox('https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-2.jpg')" aria-label="Προβολή εικόνας">
-                    <img src="https://raw.githubusercontent.com/agelmet/MPOTSOGLOU/refs/heads/main/2026-03-09-2.jpg" alt="Χώρος Θεραπείας" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 object-contain">
-                    <div class="absolute inset-0 bg-lux-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
-                        <i data-lucide="expand" class="w-8 h-8 text-white drop-shadow-md"></i>
-                    </div>
-                </button>
-            </div>
-        </div>
-    </section>
- 
-    <!-- Reviews Section (Vertical Marquee) -->
-    <section id="reviews" class="py-32 bg-lux-900 relative overflow-hidden text-white">
-        <!-- Abstract gradient overlays -->
-        <div class="absolute top-[-20%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-lux-taupe/20 blur-[120px] pointer-events-none"></div>
-        <div class="absolute bottom-[-20%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-lux-800/80 blur-[120px] pointer-events-none"></div>
+<body>
 
-        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
-            
-            <div class="reveal">
-                <img src="https://raw.githubusercontent.com/agelmet/KARAZOLI/refs/heads/main/lgoodoc.jpg" alt="Doctoranytime Logo" class="h-10 mb-8 rounded shadow-lg filter grayscale opacity-90">
-                <h2 class="text-4xl md:text-5xl font-serif text-white mb-6">Εμπειρίες Θεραπευόμενων</h2>
-                <p class="text-lux-300 font-light text-lg mb-10 max-w-lg">
-                    Η εμπιστοσύνη σας είναι η μεγαλύτερη απόδειξη της δουλειάς μας. Ένα περιβάλλον όπου ακούγεστε πραγματικά, χωρίς να κρίνεστε.
-                </p>
-                
-                <div class="flex items-center gap-4 mb-10">
-                    <div class="text-4xl font-bold font-serif text-white">10.0</div>
-                    <div>
-                        <div class="flex text-lux-taupe mb-1">
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        </div>
-                        <p class="text-xs text-lux-400 tracking-widest uppercase">Αριστη Βαθμολογια</p>
-                    </div>
-                </div>
-
-                <a href="https://www.doctoranytime.gr/d/Psychologos/mpotsoglou-dimitra" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 bg-white text-lux-900 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-lux-taupe hover:text-white transition-all duration-300 group">
-                    Διαβαστε περισσοτερα
-                    <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-
-            <!-- Vertical Marquee Wrapper -->
-            <div class="h-[600px] overflow-hidden relative marquee-mask">
-                <div class="animate-marquee-vertical flex flex-col gap-6">
-                    <!-- Set of Reviews -->
-                    <div class="bg-lux-800/50 backdrop-blur-md p-8 rounded-3xl border border-white/10 shrink-0">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <div class="flex text-lux-taupe mb-2 gap-1">
-                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                                </div>
-                                <span class="font-bold text-white">10.0</span>
-                            </div>
-                            <img src="https://raw.githubusercontent.com/agelmet/KARAZOLI/refs/heads/main/lgoodoc.jpg" class="h-6 rounded opacity-50" alt="DA">
-                        </div>
-                        <p class="text-lux-200 text-sm mb-6 italic leading-relaxed">"Η κα Μπότσογλου είναι μία επαγγελματίας με υψηλή κατάρτιση και γνώση που σε κερδίζει από την πρώτη στιγμή! Μα πάνω από όλα είναι άνθρωπος και σε κάνει να αισθάνεσαι άνετα... να ανοιχτείς! Η γλυκύτητά της σε κερδίζει... Ο χώρος είναι ένας χώρος που μπορείς να ακουστείς χωρίς να νιώθεις ότι σε κρίνουν!"</p>
-                        <div class="border-t border-white/10 pt-4">
-                            <p class="text-xs font-bold text-white uppercase tracking-wider">anjel</p>
-                            <p class="text-xs text-lux-400 mt-1">30 Μαρτίου 2026 • 1 αξιολόγηση</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-lux-800/50 backdrop-blur-md p-8 rounded-3xl border border-white/10 shrink-0">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <div class="flex text-lux-taupe mb-2 gap-1">
-                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                                </div>
-                                <span class="font-bold text-white">10.0</span>
-                            </div>
-                            <img src="https://raw.githubusercontent.com/agelmet/KARAZOLI/refs/heads/main/lgoodoc.jpg" class="h-6 rounded opacity-50" alt="DA">
-                        </div>
-                        <p class="text-lux-200 text-sm mb-6 italic leading-relaxed">"Εξαιρετικη επαγγελματιας με πολλες γνωσεις και επαρκης καταρτιση με το αντικειμενο.Πολυ ευχαριστο περιβαλλον και ζεστο. Τη συστηνω ανεπιφυλακτα"</p>
-                        <div class="border-t border-white/10 pt-4">
-                            <p class="text-xs font-bold text-white uppercase tracking-wider">Ζαχαρενια</p>
-                            <p class="text-xs text-lux-400 mt-1">29 Αυγούστου 2025 • 1 αξιολόγηση</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-lux-800/50 backdrop-blur-md p-8 rounded-3xl border border-white/10 shrink-0">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <div class="flex text-lux-taupe mb-2 gap-1">
-                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                                </div>
-                                <span class="font-bold text-white">10.0</span>
-                            </div>
-                            <img src="https://raw.githubusercontent.com/agelmet/KARAZOLI/refs/heads/main/lgoodoc.jpg" class="h-6 rounded opacity-50" alt="DA">
-                        </div>
-                        <p class="text-lux-200 text-sm mb-6 italic leading-relaxed">"Από την πρώτη στιγμή ένιωσα πολύ άνετα με την όλη διαδικασία, παρόλο που πρώτη φορά απευθύνθηκα σε ειδικό. Ένιωσα ότι υπάρχει πολύ καλή κατανόηση όλων όσων αντιμετωπίζω, με βοήθησε πολύ!"</p>
-                        <div class="border-t border-white/10 pt-4">
-                            <p class="text-xs font-bold text-white uppercase tracking-wider">Spiros</p>
-                            <p class="text-xs text-lux-400 mt-1">29 Αυγούστου 2025 • 1 αξιολόγηση</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-lux-800/50 backdrop-blur-md p-8 rounded-3xl border border-white/10 shrink-0">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <div class="flex text-lux-taupe mb-2 gap-1">
-                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                                </div>
-                                <span class="font-bold text-white">10.0</span>
-                            </div>
-                            <img src="https://raw.githubusercontent.com/agelmet/KARAZOLI/refs/heads/main/lgoodoc.jpg" class="h-6 rounded opacity-50" alt="DA">
-                        </div>
-                        <p class="text-lux-200 text-sm mb-6 italic leading-relaxed">"Υπέροχη στην δουλειά της και σαν άνθρωπος! Ένιωσα εμπιστοσύνη από τα πρώτα 10 λεπτά της συνεδρίας μας και με βοήθησε να αντιμετωπίσω τις κρίσεις άγχους που με ταλαιπωρούσαν όλα τα χρόνια ! Σας ευχαριστώ πολύ !"</p>
-                        <div class="border-t border-white/10 pt-4">
-                            <p class="text-xs font-bold text-white uppercase tracking-wider">Ξανθίππη</p>
-                            <p class="text-xs text-lux-400 mt-1">04 Νοεμβρίου 2024 • 1 αξιολόγηση</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-lux-800/50 backdrop-blur-md p-8 rounded-3xl border border-white/10 shrink-0">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <div class="flex text-lux-taupe mb-2 gap-1">
-                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                                </div>
-                                <span class="font-bold text-white">10.0</span>
-                            </div>
-                            <img src="https://raw.githubusercontent.com/agelmet/KARAZOLI/refs/heads/main/lgoodoc.jpg" class="h-6 rounded opacity-50" alt="DA">
-                        </div>
-                        <p class="text-lux-200 text-sm mb-6 italic leading-relaxed">"Η Δήμητρα είναι εξαιρετική επαγγελματίας. Από το πρώτο ραντεβού κιόλας με έκανε να νιώσω πολύ άνετα... σου δίνει έναν προσανατολισμό ώστε να καταλάβεις μόνος σου τι συμβαίνει. Την συστήνω ανεπιφύλακτα!"</p>
-                        <div class="border-t border-white/10 pt-4">
-                            <p class="text-xs font-bold text-white uppercase tracking-wider">Μαρία</p>
-                            <p class="text-xs text-lux-400 mt-1">20 Οκτωβρίου 2024 • 1 αξιολόγηση</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-lux-800/50 backdrop-blur-md p-8 rounded-3xl border border-white/10 shrink-0">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <div class="flex text-lux-taupe mb-2 gap-1">
-                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                                </div>
-                                <span class="font-bold text-white">10.0</span>
-                            </div>
-                            <img src="https://raw.githubusercontent.com/agelmet/KARAZOLI/refs/heads/main/lgoodoc.jpg" class="h-6 rounded opacity-50" alt="DA">
-                        </div>
-                        <p class="text-lux-200 text-sm mb-6 italic leading-relaxed">"Η εμπειρία μου με την ψυχολόγο Δήμητρα Μπότσογλου ήταν πραγματικά καταπληκτική!... έχει μια μοναδική ικανότητα να ακούει και να κατανοεί. Το καλύτερο δώρο που έκανα στον εαυτό μου!"</p>
-                        <div class="border-t border-white/10 pt-4">
-                            <p class="text-xs font-bold text-white uppercase tracking-wider">Ελένη</p>
-                            <p class="text-xs text-lux-400 mt-1">06 Οκτωβρίου 2024 • 1 αξιολόγηση</p>
-                        </div>
-                    </div>
-
-                    <!-- Duplicated Set for infinite loop -->
-                    <div class="bg-lux-800/50 backdrop-blur-md p-8 rounded-3xl border border-white/10 shrink-0">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <div class="flex text-lux-taupe mb-2 gap-1">
-                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                                </div>
-                                <span class="font-bold text-white">10.0</span>
-                            </div>
-                            <img src="https://raw.githubusercontent.com/agelmet/KARAZOLI/refs/heads/main/lgoodoc.jpg" class="h-6 rounded opacity-50" alt="DA">
-                        </div>
-                        <p class="text-lux-200 text-sm mb-6 italic leading-relaxed">"Είναι πολύ διακριτική! Με έκανε να νιώσω άνετα από το πρώτο λεπτό και πραγματικά ένιωσα ότι έχει πολύ σφαιρική-μοντέρνα αντίληψη του σήμερα... Άψογη επαγγελματίας μα κυρίως άνθρωπος."</p>
-                        <div class="border-t border-white/10 pt-4">
-                            <p class="text-xs font-bold text-white uppercase tracking-wider">DIMITRA</p>
-                            <p class="text-xs text-lux-400 mt-1">02 Οκτωβρίου 2024 • 1 αξιολόγηση</p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-lux-800/50 backdrop-blur-md p-8 rounded-3xl border border-white/10 shrink-0">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <div class="flex text-lux-taupe mb-2 gap-1">
-                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                                </div>
-                                <span class="font-bold text-white">10.0</span>
-                            </div>
-                            <img src="https://raw.githubusercontent.com/agelmet/KARAZOLI/refs/heads/main/lgoodoc.jpg" class="h-6 rounded opacity-50" alt="DA">
-                        </div>
-                        <p class="text-lux-200 text-sm mb-6 italic leading-relaxed">"Επισκέφθηκα την κυρία Μπότσογλου Δήμητρα και έμεινα απόλυτα ικανοποιημένος από την προσέγγιση και τη φροντίδα της... με έκανε να αισθανθώ άνετα και ασφαλής καθ’ όλη τη διάρκεια."</p>
-                        <div class="border-t border-white/10 pt-4">
-                            <p class="text-xs font-bold text-white uppercase tracking-wider">Μαργαρίτα</p>
-                            <p class="text-xs text-lux-400 mt-1">01 Σεπτεμβρίου 2024 • 1 αξιολόγηση</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <!-- Contact / Footer Section -->
-    <footer id="contact" class="bg-white text-lux-900 pt-32 pb-12 relative overflow-hidden border-t border-lux-200">
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="grid md:grid-cols-2 lg:grid-cols-12 gap-16 mb-20">
-                
-                <div class="lg:col-span-5 reveal">
-                    <h3 class="text-3xl font-serif font-bold text-lux-900 mb-6">Ξεκινήστε το Ταξίδι σας</h3>
-                    <p class="text-lux-600 mb-10 font-light leading-relaxed">
-                        Η επούλωση ξεκινά με ένα βήμα. Επικοινωνήστε μαζί μας για να ορίσουμε την πρώτη σας συνεδρία σε ένα περιβάλλον απόλυτης αποδοχής και επαγγελματισμού.
-                    </p>
-                    <a href="https://www.doctoranytime.gr/d/Psychologos/mpotsoglou-dimitra" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-lux-900 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-lux-taupe hover:shadow-glow transition-all duration-300 w-full sm:w-auto">
-                        <img src="https://raw.githubusercontent.com/agelmet/KARAZOLI/refs/heads/main/lgoodoc.jpg" alt="Doctoranytime" class="h-4 mr-3 rounded-sm opacity-90">
-                        Κλειστε Ραντεβου
-                    </a>
-                </div>
- 
-                <div class="lg:col-span-4 reveal delay-100">
-                    <h4 class="text-xs font-bold text-lux-taupe mb-8 uppercase tracking-widest">Στοιχεια Επικοινωνιας</h4>
-                    <ul class="space-y-6 text-lux-800">
-                        <li class="flex items-start gap-4">
-                            <i data-lucide="map-pin" class="w-5 h-5 text-lux-taupe shrink-0 mt-0.5"></i>
-                            <span class="font-light leading-relaxed">Μητροπόλεως 87,<br>Θεσσαλονίκη, Νομός Θεσσαλονίκης</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <i data-lucide="phone" class="w-5 h-5 text-lux-taupe shrink-0"></i>
-                            <a href="tel:+306980717853" class="font-medium hover:text-lux-taupe transition-colors text-lg tracking-wide">698 071 7853</a>
-                        </li>
-                        <li class="flex items-center gap-4 pt-4">
-                            <a href="https://www.instagram.com/psychotopos.gr/" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity">
-                                <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/instagram-logo-instagram-icon-transparent-free-png.png.webp" alt="Instagram" class="w-8 h-8">
-                            </a>
-                            <span class="text-sm font-light text-lux-600">Ακολουθήστε μας</span>
-                        </li>
-                    </ul>
-                </div>
- 
-                <div class="lg:col-span-3 reveal delay-200">
-                    <h4 class="text-xs font-bold text-lux-taupe mb-8 uppercase tracking-widest">Ωραριο Λειτουργιας</h4>
-                    <div class="bg-lux-50 p-6 rounded-2xl border border-lux-100 shadow-sm">
-                        <ul class="space-y-4 text-lux-800">
-                            <li class="flex items-center gap-3">
-                                <i data-lucide="clock" class="w-4 h-4 text-lux-taupe shrink-0"></i>
-                                <span class="font-medium text-sm">ΔΕΥΤΕΡΑ - ΣΑΒΒΑΤΟ</span>
-                            </li>
-                            <li class="pl-7 text-sm text-lux-600 font-light italic">Κατόπιν Ραντεβού</li>
-                        </ul>
-                    </div>
-                </div>
- 
-            </div>
- 
-            <div class="border-t border-lux-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 reveal">
-                <p class="text-lux-500 text-sm font-light">© 2026 Δήμητρα Μπότσογλου. Όλα τα δικαιώματα διατηρούνται.</p>
-                <p class="text-lux-500 text-sm font-light">
-                    Designed by <a href="https://advonmedia.com" target="_blank" rel="noopener" class="text-lux-900 font-bold hover:text-lux-taupe transition-colors uppercase tracking-wider text-[0.7rem]">Advon Media</a>
-                </p>
-            </div>
-        </div>
-    </footer>
- 
-    <!-- Lightbox -->
-    <div id="lightbox" class="fixed inset-0 z-[100] bg-lux-900/95 flex items-center justify-center cursor-zoom-out" onclick="closeLightbox()">
-        <button class="absolute top-6 right-6 text-white/50 hover:text-white transition-colors" aria-label="Κλείσιμο">
-            <i data-lucide="x" class="w-10 h-10"></i>
-        </button>
-        <img id="lightbox-img" src="" alt="Enlarged View" class="rounded-lg shadow-2xl cursor-default" onclick="event.stopPropagation()">
+<!-- ============ LOADER ============ -->
+<div id="loader">
+  <div class="load-inner">
+    <div class="load-mark">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 6C22 6 18 11 13 11 9 11 7 14 7 21c0 9 3 16 6 24 2 6 4 13 8 13 3 0 4-7 6-13 1-3 2-5 5-5s4 2 5 5c2 6 3 13 6 13 4 0 6-7 8-13 3-8 6-15 6-24 0-7-2-10-6-10-5 0-9-5-19-5Z" fill="#d9472f"/>
+      </svg>
     </div>
- 
-    <script>
-        // 1. Initialize Lucide Icons
-        lucide.createIcons();
- 
-        // 2. Mobile Menu Toggle
-        const mobileBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
- 
-        mobileBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            mobileMenu.classList.toggle('flex');
-        });
- 
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('flex');
-            });
-        });
- 
-        // 3. Navbar Scroll Effect
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('py-2');
-                navbar.classList.remove('py-4');
-                navbar.querySelector('.glass').classList.add('bg-white/90');
-                navbar.querySelector('.glass').classList.remove('bg-white/70');
-            } else {
-                navbar.classList.add('py-4');
-                navbar.classList.remove('py-2');
-                navbar.querySelector('.glass').classList.add('bg-white/70');
-                navbar.querySelector('.glass').classList.remove('bg-white/90');
-            }
-        });
- 
-        // 4. Scroll Reveal Animations
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
- 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    observer.unobserve(entry.target); 
-                }
-            });
-        }, observerOptions);
- 
-        document.querySelectorAll('.reveal').forEach(el => {
-            observer.observe(el);
-        });
- 
-        // 5. Lightbox Functionality
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
- 
-        function openLightbox(imageSrc) {
-            lightboxImg.src = imageSrc;
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
- 
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            setTimeout(() => {
-                lightboxImg.src = '';
-                document.body.style.overflow = '';
-            }, 500);
-        }
- 
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-                closeLightbox();
-            }
-        });
-    </script>
+    <div class="load-name"><span>Νίκος Μούρτζινος</span></div>
+    <div class="load-line"></div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header id="header">
+  <div class="bar">
+    <a href="#top" class="brand" aria-label="Νίκος Μούρτζινος — Αρχική">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="tooth-f" d="M32 6C22 6 18 11 13 11 9 11 7 14 7 21c0 9 3 16 6 24 2 6 4 13 8 13 3 0 4-7 6-13 1-3 2-5 5-5s4 2 5 5c2 6 3 13 6 13 4 0 6-7 8-13 3-8 6-15 6-24 0-7-2-10-6-10-5 0-9-5-19-5Z" fill="#d9472f"/>
+      </svg>
+      <span class="bt">
+        <span class="bn">Νίκος Μούρτζινος</span><br>
+        <span class="bp">Χειρουργός Οδοντίατρος</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Κύρια πλοήγηση">
+      <a class="lk" href="#about">Το Ιατρείο</a>
+      <a class="lk" href="#services">Υπηρεσίες</a>
+      <a class="lk" href="#process">Διαδικασία</a>
+      <a class="lk" href="#reviews">Αξιολογήσεις</a>
+      <a class="lk" href="#faq">Ερωτήσεις</a>
+      <a class="nav-cta" href="tel:+302102468230">Κλείστε Ραντεβού</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Μενού" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="overlay" id="overlay">
+  <a href="#about">Το Ιατρείο</a>
+  <a href="#services">Υπηρεσίες</a>
+  <a href="#process">Διαδικασία</a>
+  <a href="#reviews">Αξιολογήσεις</a>
+  <a href="#faq">Ερωτήσεις</a>
+  <a href="#contact">Επικοινωνία</a>
+  <div class="ov-foot">
+    Οδυσσέως 17, Αχαρνές · <a href="tel:+302102468230">21 0246 8230</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<main id="top">
+<section class="hero">
+  <div class="hero-bg">
+    <img src="https://raw.githubusercontent.com/agelmet/MOURTZINOS/7633aa5f8864c4cffcb0e5b8957aac69a6c9e834/DSC_4592-Enhanced-NR.jpg" alt="Ο σύγχρονος χώρος του οδοντιατρείου Μούρτζινου στο Μενίδι" loading="eager">
+  </div>
+  <div class="hero-grain"></div>
+  <div class="hero-inner wrap">
+    <div class="hero-tag">
+      <span class="dot"></span>
+      <span>Μενίδι, Αχαρνές · Α.Μ. 11256</span>
+    </div>
+    <h1>
+      <span class="ln"><span>Δεν υπάρχει</span></span>
+      <span class="ln"><span>αισθητική χωρίς</span></span>
+      <span class="ln"><span><em>σταθερότητα.</em></span></span>
+    </h1>
+    <p class="hero-sub">Χειρουργική Στόματος, Εμφυτεύματα & Αισθητική Οδοντιατρική. Ένα χαμόγελο που είναι ταυτόχρονα όμορφο, υγιές και ανθεκτικό στον χρόνο.</p>
+    <div class="hero-actions">
+      <a href="tel:+302102468230" class="btn btn-primary">
+        Κλείστε Ραντεβού
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#services" class="btn btn-ghost">Οι Υπηρεσίες μας</a>
+    </div>
+  </div>
+  <div class="hero-meta">
+    <div class="num">172+</div>
+    <div class="lbl">Αξιολογήσεις Ασθενών</div>
+  </div>
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <span class="ln2"></span>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marquee">
+    <span>Χειρουργική Στόματος</span><span>Εμφυτεύματα Δοντιών</span><span>Αισθητική Αποκατάσταση</span><span>Ενδοδοντία</span><span>Προληπτική Φροντίδα</span><span>Προσωποποιημένη Θεραπεία</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-figure reveal">
+      <div class="frame">
+        <img src="https://raw.githubusercontent.com/agelmet/MOURTZINOS/7633aa5f8864c4cffcb0e5b8957aac69a6c9e834/nq-1a6e4ceb-6508-4de5-9a12-b2f17d6afb01.jpg" alt="Ο Νίκος Μούρτζινος, Χειρουργός Οδοντίατρος, στο ιατρείο του στο Μενίδι" loading="lazy">
+        <span class="am">10ετής εμπειρία στα εμφυτεύματα</span>
+      </div>
+      <div class="tagchip">
+        <div class="nm">Νίκος Μούρτζινος</div>
+        <div class="rl">DDS · Χειρουργός Οδοντίατρος</div>
+      </div>
+    </div>
+    <div class="about-body reveal d1">
+      <div class="eyebrow"><span class="ix">01</span> Το Ιατρείο</div>
+      <h2>Όπου η επιστήμη συναντά τη φροντίδα.</h2>
+      <p>Με έδρα το Μενίδι και πολυετή κλινική εμπειρία, ο Νίκος Μούρτζινος έχει εδραιώσει το ιατρείο του ως έναν χώρο όπου η ιατρική επιστήμη συναντά τον σεβασμό προς τον ασθενή. Με εξειδίκευση στη Χειρουργική Στόματος και την Αισθητική Οδοντιατρική, αντιμετωπίζει κάθε περιστατικό με συνέπεια και επιστημονική τεκμηρίωση.</p>
+      <div class="pullquote">«Ο ασθενής δεν είναι ένας αριθμός — είναι ένας συνεργάτης. Η θεραπεία είναι μια κοινή απόφαση.»</div>
+      <p>Η φιλοσοφία της προσωποποιημένης φροντίδας είναι κυρίαρχη: από την πρόληψη μέχρι τις πιο σύνθετες χειρουργικές επεμβάσεις, κάθε ασθενής ενημερώνεται αναλυτικά για το πλάνο θεραπείας του, ώστε το τελικό αποτέλεσμα να ανταποκρίνεται απόλυτα στις προσωπικές του ανάγκες.</p>
+      <div class="about-stats">
+        <div class="st"><div class="n">172+</div><div class="l">Αξιολογήσεις</div></div>
+        <div class="st"><div class="n">10ετής</div><div class="l">Εμπειρία στα εμφυτεύματα</div></div>
+        <div class="st"><div class="n">10.0</div><div class="l">Μέση βαθμολογία</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow"><span class="ix">02</span> Υπηρεσίες</div>
+      <h2 class="sec-title">Ολοκληρωμένες λύσεις, από τη <em>διάγνωση</em> έως την αποκατάσταση.</h2>
+      <p>Κάθε θεραπεία ξεκινά από τη σωστή διάγνωση και ολοκληρώνεται με τη λειτουργική και αισθητική αποκατάσταση του στόματος.</p>
+    </div>
+    <div class="svc-list reveal d1">
+
+      <div class="svc">
+        <div class="svc-head">
+          <span class="svc-num">/01</span>
+          <span class="svc-title">Χειρουργική Στόματος & Εμφυτεύματα</span>
+          <span class="svc-toggle" aria-hidden="true"></span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-body-in">
+            <p>Με 10ετή εξειδικευμένη εμπειρία στα εμφυτεύματα, προσφέρουμε μόνιμες λύσεις για την αποκατάσταση των δοντιών που λείπουν. Η διαδικασία γίνεται με απόλυτη χειρουργική ακρίβεια, διασφαλίζοντας τη λειτουργικότητα και τη μακροβιότητα. Παράλληλα, οι χειρουργικές εξαγωγές προσεγγίζονται με τη μέγιστη προσοχή για την ελαχιστοποίηση της ενόχλησης.</p>
+            <div class="tags">
+              <span class="t">Εμφυτεύματα δοντιών</span>
+              <span class="t">Χειρουργικές εξαγωγές</span>
+              <span class="t">Ελάχιστη ενόχληση</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-head">
+          <span class="svc-num">/02</span>
+          <span class="svc-title">Αισθητική & Προσθετική</span>
+          <span class="svc-toggle" aria-hidden="true"></span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-body-in">
+            <p>Ένα υγιές χαμόγελο είναι και ένα όμορφο χαμόγελο. Πραγματοποιούμε αισθητικές παρεμβάσεις όπως όψεις ρητίνης και λεύκανση δοντιών, που βελτιώνουν άμεσα την εικόνα σας. Οι στεφάνες (θήκες) υψηλής ποιότητας αποκαθιστούν τη φθορά, χαρίζοντας ξανά λειτουργικότητα και φυσική εμφάνιση.</p>
+            <div class="tags">
+              <span class="t">Στεφάνες / Θήκες</span>
+              <span class="t">Όψεις ρητίνης</span>
+              <span class="t">Λεύκανση δοντιών</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-head">
+          <span class="svc-num">/03</span>
+          <span class="svc-title">Ενδοδοντία & Συντηρητική</span>
+          <span class="svc-toggle" aria-hidden="true"></span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-body-in">
+            <p>Η διάσωση των φυσικών δοντιών αποτελεί πάντα την πρώτη μας προτεραιότητα. Μέσω της ενδοδοντικής θεραπείας (απονεύρωση) αντιμετωπίζουμε λοιμώξεις και φλεγμονές του νεύρου, σώζοντας δόντια που υπό άλλες συνθήκες θα οδηγούνταν σε εξαγωγή. Τα σύγχρονα σφραγίσματα αποκαθιστούν τις βλάβες από τερηδόνα με υλικά εξαιρετικής αντοχής.</p>
+            <div class="tags">
+              <span class="t">Απονεύρωση δοντιών</span>
+              <span class="t">Σφράγισμα δοντιών</span>
+              <span class="t">Διάσωση φυσικών δοντιών</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-head">
+          <span class="svc-num">/04</span>
+          <span class="svc-title">Πρόληψη & Στοματική Υγιεινή</span>
+          <span class="svc-toggle" aria-hidden="true"></span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-body-in">
+            <p>Η πρόληψη είναι το παν. Ο στοματικός και ακτινογραφικός έλεγχος αποτελούν τη βάση για τον εντοπισμό προβλημάτων πριν αυτά γίνουν επώδυνα. Ο επαγγελματικός καθαρισμός, η στίλβωση και η φθορίωση προστατεύουν από την ουλίτιδα και την περιοδοντίτιδα, εξασφαλίζοντας μια ζωή με υγιή ούλα και δόντια.</p>
+            <div class="tags">
+              <span class="t">Στοματικός έλεγχος</span>
+              <span class="t">Καθαρισμός δοντιών</span>
+              <span class="t">Στίλβωση & Φθορίωση</span>
+              <span class="t">Ακτινογραφικός έλεγχος</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section process" id="process">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow"><span class="ix">03</span> Η Διαδικασία</div>
+      <h2 class="sec-title">Μια <em>χαρτογράφηση</em> της υγείας σας.</h2>
+    </div>
+    <div class="proc-grid reveal d1">
+      <div class="proc-step">
+        <span class="pdot"></span>
+        <div class="pn">01</div>
+        <h4>Διάγνωση</h4>
+        <p>Πλήρης στοματικός και ακτινογραφικός έλεγχος — όχι μια τυπική διαδικασία, αλλά μια πλήρης χαρτογράφηση της υγείας σας.</p>
+      </div>
+      <div class="proc-step">
+        <span class="pdot"></span>
+        <div class="pn">02</div>
+        <h4>Πλάνο Θεραπείας</h4>
+        <p>Αναλυτική ενημέρωση για κάθε βήμα. Η θεραπεία σχεδιάζεται μαζί σας, σύμφωνα με τις δικές σας ανάγκες και προσδοκίες.</p>
+      </div>
+      <div class="proc-step">
+        <span class="pdot"></span>
+        <div class="pn">03</div>
+        <h4>Αποκατάσταση</h4>
+        <p>Από την πρόληψη έως τις σύνθετες χειρουργικές επεμβάσεις, με απόλυτο έλεγχο και ελαχιστοποίηση του χρόνου ανάρρωσης.</p>
+      </div>
+      <div class="proc-step">
+        <span class="pdot"></span>
+        <div class="pn">04</div>
+        <h4>Σταθερότητα</h4>
+        <p>Ένα αποτέλεσμα που αντέχει στη μάσηση, τον χρόνο και τις καθημερινές καταπονήσεις — όχι μόνο όμορφο, αλλά ανθεκτικό.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section class="section philo">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow"><span class="ix">04</span> Η Φιλοσοφία</div>
+      <h2 class="sec-title">Χειρουργική ακρίβεια, <em>αισθητική</em> αρτιότητα.</h2>
+    </div>
+    <div class="philo-grid">
+      <div class="philo-card reveal d1">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h4>Η Ασφάλεια πάνω από όλα</h4>
+        <p>Είτε πρόκειται για μια απλή εξαγωγή είτε για την τοποθέτηση εμφυτευμάτων, ο στόχος είναι ο απόλυτος έλεγχος. Η πολυετής εμπειρία επιτρέπει να προβλέπονται οι προκλήσεις και να ελαχιστοποιείται ο χρόνος ανάρρωσης.</p>
+      </div>
+      <div class="philo-card reveal d2">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3" stroke-linecap="round"/></svg>
+        <h4>Η Ολιστική Ματιά</h4>
+        <p>Συχνά οι ασθενείς έρχονται για ένα συγκεκριμένο πρόβλημα. Αν όμως δεν αντιμετωπίσουμε τις αιτίες — ουλίτιδα ή προβλήματα σύγκλεισης — κανένα σφράγισμα ή στεφάνη δεν θα κρατήσει για πάντα.</p>
+      </div>
+      <div class="philo-card reveal d3">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.3-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.7-7 10-7 10Z" stroke-linejoin="round"/></svg>
+        <h4>Η Δύναμη της Εμπιστοσύνης</h4>
+        <p>Οι 172+ ασθενείς δεν επέλεξαν να μοιραστούν την εμπειρία τους μόνο για την τεχνική αρτιότητα — αλλά γιατί εδώ ο ασθενής είναι συνεργάτης, και η θεραπεία μια κοινή απόφαση.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section gallery">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow"><span class="ix">05</span> Ο Χώρος</div>
+      <h2 class="sec-title">Ένας χώρος σχεδιασμένος για την <em>άνεσή</em> σας.</h2>
+    </div>
+    <div class="gal-grid reveal d1">
+      <div class="gal-item g-a" data-full="https://raw.githubusercontent.com/agelmet/MOURTZINOS/7633aa5f8864c4cffcb0e5b8957aac69a6c9e834/DSC_4592-Enhanced-NR.jpg">
+        <img src="https://raw.githubusercontent.com/agelmet/MOURTZINOS/7633aa5f8864c4cffcb0e5b8957aac69a6c9e834/DSC_4592-Enhanced-NR.jpg" alt="Σύγχρονη οδοντιατρική μονάδα στο ιατρείο Μούρτζινου" loading="lazy">
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4M11 8v6M8 11h6" stroke-linecap="round"/></svg></span>
+      </div>
+      <div class="gal-item g-b" data-full="https://raw.githubusercontent.com/agelmet/MOURTZINOS/7633aa5f8864c4cffcb0e5b8957aac69a6c9e834/DSC_4564-Enhanced-NR.jpg">
+        <img src="https://raw.githubusercontent.com/agelmet/MOURTZINOS/7633aa5f8864c4cffcb0e5b8957aac69a6c9e834/DSC_4564-Enhanced-NR.jpg" alt="Άνετος χώρος αναμονής με φυσικό φωτισμό" loading="lazy">
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4M11 8v6M8 11h6" stroke-linecap="round"/></svg></span>
+      </div>
+      <div class="gal-item g-c" data-full="https://raw.githubusercontent.com/agelmet/MOURTZINOS/7633aa5f8864c4cffcb0e5b8957aac69a6c9e834/DSC_4550-Enhanced-NR.jpg">
+        <img src="https://raw.githubusercontent.com/agelmet/MOURTZINOS/7633aa5f8864c4cffcb0e5b8957aac69a6c9e834/DSC_4550-Enhanced-NR.jpg" alt="Πλήρως εξοπλισμένη οδοντιατρική αίθουσα" loading="lazy">
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4M11 8v6M8 11h6" stroke-linecap="round"/></svg></span>
+      </div>
+      <div class="gal-item g-d" data-full="https://raw.githubusercontent.com/agelmet/MOURTZINOS/7633aa5f8864c4cffcb0e5b8957aac69a6c9e834/DSC_4621-Enhanced-NR.jpg">
+        <img src="https://raw.githubusercontent.com/agelmet/MOURTZINOS/7633aa5f8864c4cffcb0e5b8957aac69a6c9e834/DSC_4621-Enhanced-NR.jpg" alt="Φιλόξενος χώρος υποδοχής ασθενών" loading="lazy">
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4M11 8v6M8 11h6" stroke-linecap="round"/></svg></span>
+      </div>
+      <div class="gal-item g-e" data-full="https://raw.githubusercontent.com/agelmet/MOURTZINOS/7633aa5f8864c4cffcb0e5b8957aac69a6c9e834/DSC_4629-Enhanced-NR.jpg">
+        <img src="https://raw.githubusercontent.com/agelmet/MOURTZINOS/7633aa5f8864c4cffcb0e5b8957aac69a6c9e834/DSC_4629-Enhanced-NR.jpg" alt="Λεπτομέρεια του οδοντιατρικού χώρου" loading="lazy">
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4M11 8v6M8 11h6" stroke-linecap="round"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow"><span class="ix">06</span> Αξιολογήσεις</div>
+    </div>
+    <div class="rev-top reveal d1">
+      <div>
+        <h2 class="sec-title" style="margin-bottom:1.4rem">Η εμπιστοσύνη <em>172+</em> ασθενών.</h2>
+        <div class="rev-score">
+          <div class="big">10.0</div>
+          <div class="meta">
+            <div class="stars">★★★★★</div>
+            <div class="cnt">Μέση βαθμολογία σε 172+ αξιολογήσεις</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rev-track-wrap reveal d2">
+      <div class="rev-track" id="revTrack"></div>
+    </div>
+
+    <div class="rev-ctrl reveal d2">
+      <button class="rev-btn" id="revPrev" aria-label="Προηγούμενη αξιολόγηση">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="rev-btn" id="revNext" aria-label="Επόμενη αξιολόγηση">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="rev-prog"><i id="revProg"></i></div>
+      <div class="rev-src">Πηγή: <a href="https://www.doctoranytime.gr/d/Odontiatros/mourtzinos-nikos#review-section" target="_blank" rel="noopener">doctoranytime.gr</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="wrap">
+    <div class="faq-grid">
+      <div class="reveal">
+        <div class="eyebrow"><span class="ix">07</span> Ερωτήσεις</div>
+        <h2 class="sec-title">Συχνές <em>απορίες.</em></h2>
+      </div>
+      <div class="faq-list reveal d1">
+        <div class="faq-item">
+          <div class="faq-q">Πόσο κοστίζει ο πρώτος έλεγχος;<span class="faq-ic" aria-hidden="true"></span></div>
+          <div class="faq-a"><p>Ο στοματικός και ακτινογραφικός έλεγχος έχει κόστος 30€. Αποτελεί τη βάση για μια πλήρη χαρτογράφηση της υγείας σας και τον εντοπισμό τυχόν προβλημάτων πριν αυτά γίνουν επώδυνα.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Τι περιλαμβάνει η θεραπεία με εμφυτεύματα;<span class="faq-ic" aria-hidden="true"></span></div>
+          <div class="faq-a"><p>Με 10ετή εξειδικευμένη εμπειρία, προσφέρουμε μόνιμες λύσεις για την αποκατάσταση δοντιών που λείπουν. Η διαδικασία γίνεται με χειρουργική ακρίβεια, διασφαλίζοντας τη λειτουργικότητα και τη μακροβιότητα της αποκατάστασης.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Μπορεί να σωθεί ένα προβληματικό δόντι;<span class="faq-ic" aria-hidden="true"></span></div>
+          <div class="faq-a"><p>Η διάσωση των φυσικών δοντιών είναι πάντα η πρώτη μας προτεραιότητα. Μέσω της ενδοδοντικής θεραπείας (απονεύρωση) αντιμετωπίζουμε λοιμώξεις και φλεγμονές του νεύρου, σώζοντας δόντια που υπό άλλες συνθήκες θα οδηγούνταν σε εξαγωγή.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Πώς αποφασίζεται το πλάνο θεραπείας μου;<span class="faq-ic" aria-hidden="true"></span></div>
+          <div class="faq-a"><p>Κάθε ασθενής ενημερώνεται αναλυτικά για κάθε βήμα. Η θεραπεία είναι μια κοινή απόφαση — σχεδιάζεται μαζί σας ώστε το τελικό αποτέλεσμα να ανταποκρίνεται απόλυτα στις προσωπικές σας ανάγκες και προσδοκίες.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Πού βρίσκεται το ιατρείο;<span class="faq-ic" aria-hidden="true"></span></div>
+          <div class="faq-a"><p>Το ιατρείο βρίσκεται στην οδό Οδυσσέως 17, στο Μενίδι (Αχαρνές, Αττική). Για ραντεβού μπορείτε να καλέσετε στο 21 0246 8230.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="eyebrow"><span class="ix">08</span> Επικοινωνία</div>
+      <h2>Ας ξεκινήσουμε με ένα <em>χαμόγελο.</em></h2>
+      <p class="contact-lead">Επικοινωνήστε μαζί μας για να κλείσετε το ραντεβού σας. Θα βγείτε από την πόρτα με ένα χαμόγελο υγιές, λειτουργικό και ανθεκτικό στον χρόνο.</p>
+      <div class="cinfo">
+        <a href="tel:+302102468230">
+          <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><span class="clbl">Τηλέφωνο</span><br><span class="cval">21 0246 8230</span></span>
+        </a>
+        <a href="https://maps.google.com/?q=Οδυσσέως+17+Αχαρνές" target="_blank" rel="noopener">
+          <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" stroke-linejoin="round"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span><span class="clbl">Διεύθυνση</span><br><span class="cval">Οδυσσέως 17, Αχαρνές, Αττική</span></span>
+        </a>
+        <div class="ci">
+          <span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z" stroke-linejoin="round"/></svg></span>
+          <span><span class="clbl">Μητρώο</span><br><span class="cval">Α.Μ. 11256 · Χειρουργός Οδοντίατρος</span></span>
+        </div>
+      </div>
+      <div class="contact-cta-row">
+        <a href="tel:+302102468230" class="btn btn-primary">Κλείστε Ραντεβού
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="map-frame reveal d1">
+      <iframe title="Χάρτης — Οδυσσέως 17, Αχαρνές" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%CE%9F%CE%B4%CF%85%CF%83%CF%83%CE%AD%CF%89%CF%82%2017%2C%20%CE%91%CF%87%CE%B1%CF%81%CE%BD%CE%AD%CF%82&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path class="tooth-f" d="M32 6C22 6 18 11 13 11 9 11 7 14 7 21c0 9 3 16 6 24 2 6 4 13 8 13 3 0 4-7 6-13 1-3 2-5 5-5s4 2 5 5c2 6 3 13 6 13 4 0 6-7 8-13 3-8 6-15 6-24 0-7-2-10-6-10-5 0-9-5-19-5Z"/>
+        </svg>
+        <div><div class="bn">Νίκος Μούρτζινος</div><div class="bp">Χειρουργός Οδοντίατρος</div></div>
+      </div>
+      <nav class="foot-nav" aria-label="Πλοήγηση υποσέλιδου">
+        <a href="#about">Το Ιατρείο</a>
+        <a href="#services">Υπηρεσίες</a>
+        <a href="#process">Διαδικασία</a>
+        <a href="#reviews">Αξιολογήσεις</a>
+        <a href="#faq">Ερωτήσεις</a>
+        <a href="#contact">Επικοινωνία</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <div>© <span id="yr"></span> Νίκος Μούρτζινος, DDS · Οδυσσέως 17, Αχαρνές · 21 0246 8230</div>
+      <div class="credit">Designed by <a href="https://www.advonmedia.com" target="_blank" rel="noopener">Advon Media</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="Κλείσιμο"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18" stroke-linecap="round"/></svg></button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Προηγούμενη"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Επόμενη"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---- LOADER ---- */
+  window.addEventListener("load",function(){
+    setTimeout(function(){ document.getElementById("loader").classList.add("done"); },1600);
+  });
+
+  /* ---- NAV scroll state ---- */
+  const header=document.getElementById("header");
+  const onScroll=function(){ header.classList.toggle("scrolled",window.scrollY>60); };
+  onScroll();
+  window.addEventListener("scroll",onScroll,{passive:true});
+
+  /* ---- Mobile menu ---- */
+  const burger=document.getElementById("burger"), overlay=document.getElementById("overlay");
+  const toggleMenu=function(force){
+    const open=force!==undefined?force:!document.body.classList.contains("menu-open");
+    document.body.classList.toggle("menu-open",open);
+    burger.setAttribute("aria-expanded",open);
+  };
+  burger.addEventListener("click",function(){toggleMenu();});
+  overlay.querySelectorAll("a").forEach(function(a){ a.addEventListener("click",function(){toggleMenu(false);}); });
+
+  /* ---- Marquee duplicate for seamless loop ---- */
+  const mq=document.getElementById("marquee");
+  if(mq){ mq.innerHTML+=mq.innerHTML; }
+
+  /* ---- Reveal on scroll ---- */
+  const revObs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); revObs.unobserve(e.target); } });
+  },{threshold:0.12,rootMargin:"0px 0px -8% 0px"});
+  document.querySelectorAll(".reveal").forEach(function(el){ revObs.observe(el); });
+
+  /* ---- Services accordion ---- */
+  document.querySelectorAll(".svc").forEach(function(svc){
+    const head=svc.querySelector(".svc-head"), body=svc.querySelector(".svc-body");
+    head.addEventListener("click",function(){
+      const isOpen=svc.classList.contains("open");
+      document.querySelectorAll(".svc.open").forEach(function(o){ o.classList.remove("open"); o.querySelector(".svc-body").style.maxHeight=null; });
+      if(!isOpen){ svc.classList.add("open"); body.style.maxHeight=body.scrollHeight+"px"; }
+    });
+  });
+
+  /* ---- FAQ accordion ---- */
+  document.querySelectorAll(".faq-item").forEach(function(item){
+    const q=item.querySelector(".faq-q"), a=item.querySelector(".faq-a");
+    q.addEventListener("click",function(){
+      const isOpen=item.classList.contains("open");
+      document.querySelectorAll(".faq-item.open").forEach(function(o){ o.classList.remove("open"); o.querySelector(".faq-a").style.maxHeight=null; });
+      if(!isOpen){ item.classList.add("open"); a.style.maxHeight=a.scrollHeight+"px"; }
+    });
+  });
+
+  /* ---- Reviews carousel ---- */
+  const reviews=[
+    {n:"Σοφία",d:"26 Μαΐου 2026",t:"Εξαιρετικός επαγγελματίας, με πραγματικό ενδιαφέρον για τον ασθενή. Είναι προσιτός, ευγενικός και σε κάνει να νιώθεις άνετα από την πρώτη στιγμή. Έχω πραγματοποιήσει αρκετές επισκέψεις για καθαρισμό, σφραγίσματα και εφαρμογή λοιπών οδοντιατρικών εργασιών και η εμπειρία μου ήταν πολύ καλή. Είναι πολύ σχολαστικός και προσεκτικός στη δουλειά του, δίνοντας ιδιαίτερη έμφαση στη λεπτομέρεια."},
+    {n:"Θεοδώρα",d:"09 Δεκεμβρίου 2025",t:"Ήταν η πρώτη μου επίσκεψη. Μου ενέπνευσε εμπιστοσύνη από το πρώτο λεπτό, ευγενέστατος, αναλυτικός και προπαντός δεν κατάλαβα πόνο ούτε μία στιγμή."},
+    {n:"Vassilis",d:"26 Δεκεμβρίου 2025",t:"Εξαιρετικός σε όλα του — βαθιά γνώση του αντικειμένου του και εξατομικευμένες θεραπείες και συμβουλές."},
+    {n:"Πωλίνα",d:"20 Σεπτεμβρίου 2025",t:"Εξαιρετικός γιατρός και πολύ περισσότερο εξαιρετικός άνθρωπος. Εξέτασε ενδελεχώς το πρόβλημα και προσπάθησε να βρει τη καλύτερη λύση. Είμαι πολύ ικανοποιημένη!!!"},
+    {n:"Νάντερ",d:"10 Οκτωβρίου 2025",t:"Ο καλύτερος με διαφορά. Αρκετά χρόνια πελάτης του κ. Μούρτζινου, προτείνω ανεπιφύλακτα."},
+    {n:"Άννα-Μαρία",d:"06 Νοεμβρίου 2025",t:"Ένας εξαιρετικός γιατρός ο οποίος εμβαθύνει στην κάθε περίπτωση και λύνει οποιαδήποτε απορία έχεις."},
+    {n:"Κύριλλος",d:"30 Οκτωβρίου 2025",t:"Παρά πολύ καλός οδοντίατρος και πάνω από όλα άνθρωπος που θα σου εξηγήσει ότι απορία έχεις."},
+    {n:"Γεωργία",d:"19 Σεπτεμβρίου 2025",t:"Εξαιρετικός! Σε όλα! Και κυρίως με έκανε να αισθανθώ πολύ άνετα! Μπράβο!"},
+    {n:"Νατάσα",d:"29 Ιανουαρίου 2026",t:"Λεπτολόγος, ευγενικός, άψογος, με σωστή προσέγγιση του προβλήματος."},
+    {n:"Παρασκευή",d:"04 Ιουνίου 2026",t:"Εξαιρετικός άνθρωπος και επιστήμονας!!!"},
+    {n:"Dimitris",d:"30 Αυγούστου 2025",t:"Εξυπηρετικότατος, ευδιάθετος και έδειξε κατανόηση στο πρόβλημα και τις ανησυχίες μου."},
+    {n:"Γιάννης",d:"17 Μαρτίου 2026",t:"Κατανοητικός, αστείος και προσεκτικός. Εξαιρετική δουλειά."}
+  ];
+  const track=document.getElementById("revTrack");
+  reviews.forEach(function(r){
+    const card=document.createElement("div");
+    card.className="rev-card";
+    const initial=r.n.trim().charAt(0);
+    card.innerHTML='<div class="qr">&#8220;</div>'+
+      '<p class="rtxt">'+r.t+'</p>'+
+      '<button class="more">Διαβάστε περισσότερα</button>'+
+      '<div class="rfoot"><span class="av">'+initial+'</span>'+
+      '<span><span class="rn">'+r.n+'</span><br><span class="rd">'+r.d+'</span></span>'+
+      '<span class="v10">10.0</span></div>';
+    track.appendChild(card);
+  });
+  // clip detection + expand
+  requestAnimationFrame(function(){
+    track.querySelectorAll(".rev-card").forEach(function(c){
+      const txt=c.querySelector(".rtxt");
+      if(txt.scrollHeight-txt.clientHeight>4){ c.classList.add("clip"); }
+      c.querySelector(".more").addEventListener("click",function(){
+        c.classList.toggle("exp");
+        this.textContent=c.classList.contains("exp")?"Λιγότερα":"Διαβάστε περισσότερα";
+        recalc();
+      });
+    });
+    recalc();
+  });
+
+  let idx=0;
+  const prevBtn=document.getElementById("revPrev"), nextBtn=document.getElementById("revNext"), prog=document.getElementById("revProg");
+  function perView(){ return window.innerWidth<=960?1:(window.innerWidth<=1180?2:3); }
+  function maxIdx(){ return Math.max(0,reviews.length-perView()); }
+  function recalc(){
+    const cards=track.querySelectorAll(".rev-card");
+    if(!cards.length) return;
+    const cw=cards[0].getBoundingClientRect().width+22;
+    track.style.transform="translateX("+(-idx*cw)+"px)";
+    const mi=maxIdx();
+    prevBtn.disabled=idx<=0; nextBtn.disabled=idx>=mi;
+    const seg=100/(mi+1);
+    prog.style.width=seg+"%"; prog.style.left=(seg*idx)+"%";
+  }
+  prevBtn.addEventListener("click",function(){ idx=Math.max(0,idx-1); recalc(); resetAuto(); });
+  nextBtn.addEventListener("click",function(){ idx=Math.min(maxIdx(),idx+1); recalc(); resetAuto(); });
+  window.addEventListener("resize",function(){ idx=Math.min(idx,maxIdx()); recalc(); });
+
+  let auto=setInterval(tick,5500);
+  function tick(){ idx=idx>=maxIdx()?0:idx+1; recalc(); }
+  function resetAuto(){ clearInterval(auto); auto=setInterval(tick,5500); }
+  const revWrap=document.querySelector(".rev-track-wrap");
+  revWrap.addEventListener("mouseenter",function(){ clearInterval(auto); });
+  revWrap.addEventListener("mouseleave",function(){ resetAuto(); });
+
+  /* ---- Lightbox ---- */
+  const lb=document.getElementById("lightbox"), lbImg=document.getElementById("lbImg");
+  const items=Array.prototype.slice.call(document.querySelectorAll(".gal-item"));
+  let lbIdx=0;
+  function openLb(i){ lbIdx=i; lbImg.src=items[i].dataset.full; lbImg.alt=items[i].querySelector("img").alt; lb.classList.add("show"); lb.setAttribute("aria-hidden","false"); }
+  function closeLb(){ lb.classList.remove("show"); lb.setAttribute("aria-hidden","true"); }
+  items.forEach(function(it,i){ it.addEventListener("click",function(){ openLb(i); }); });
+  document.getElementById("lbClose").addEventListener("click",closeLb);
+  document.getElementById("lbPrev").addEventListener("click",function(){ lbIdx=(lbIdx-1+items.length)%items.length; openLb(lbIdx); });
+  document.getElementById("lbNext").addEventListener("click",function(){ lbIdx=(lbIdx+1)%items.length; openLb(lbIdx); });
+  lb.addEventListener("click",function(e){ if(e.target===lb) closeLb(); });
+  document.addEventListener("keydown",function(e){
+    if(!lb.classList.contains("show")) return;
+    if(e.key==="Escape") closeLb();
+    if(e.key==="ArrowLeft"){ lbIdx=(lbIdx-1+items.length)%items.length; openLb(lbIdx); }
+    if(e.key==="ArrowRight"){ lbIdx=(lbIdx+1)%items.length; openLb(lbIdx); }
+  });
+
+  /* ---- Year ---- */
+  document.getElementById("yr").textContent=new Date().getFullYear();
+
+})();
+</script>
 </body>
 </html>
